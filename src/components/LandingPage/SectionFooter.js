@@ -50,8 +50,8 @@ class SectionHero extends React.Component {
                             }}><i className="simple-icon-arrow-up"></i></NavLink>
                         </Colxx>
                         <Colxx xxs="12" className="text-center footer-content">
-                            <NavLink to="/multipage-home">
-                                <img className="footer-logo" alt="footer logo" src="/assets/img/logo-pvi.svg" />
+                            <NavLink to="/home">
+                                <img className="footer-logo" alt="footer logo" src="/assets/img/logo-pvi.jfif" />
                             </NavLink>
                         </Colxx>
                     </Row>

@@ -420,6 +420,10 @@ p {
   color: $theme-color-2;
 }
 
+.color-theme-7 {
+  color: $theme-color-7;
+}
+
 .view-icon {
   font-size: 20px;
   color: $secondary-color;
@@ -5649,7 +5653,7 @@ input:-webkit-autofill {
     border-radius: 0.2rem;
     color: $primary-color;
     box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.04);
-    font-size: 20px;
+    font-size: 30px;
     top: 50%;
     transform: translateY(-50%);
     color: $theme-color-1;
@@ -6334,22 +6338,14 @@ input:-webkit-autofill {
 
     .navbar-logo {
       width: 120px;
-      height: 40px;
+      height: 70px;
 
       .white {
         display: inline-block;
         width: 120px;
-        height: 40px;
+        height: 70px;
         background: url($lpLogoPath);
         background-repeat: no-repeat;
-      }
-
-      .dark {
-        width: 120px;
-        height: 40px;
-        background: url($lpLogoPathPinned);
-        background-repeat: no-repeat;
-        display: none;
       }
     }
 

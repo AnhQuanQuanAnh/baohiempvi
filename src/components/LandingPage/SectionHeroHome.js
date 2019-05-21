@@ -59,15 +59,6 @@ export default class SectionHeroHome extends React.Component {
           </div>
         </Colxx>
 
-        <Colxx
-          xxs="12"
-          xl={{ size: 7, offset: 1 }}
-          md="6"
-          lg="7"
-          className="d-none d-md-block"
-        >
-          <img alt="hero" src="/assets/img/landing-page/home-hero.png" />
-        </Colxx>
       </Row>
     );
   }

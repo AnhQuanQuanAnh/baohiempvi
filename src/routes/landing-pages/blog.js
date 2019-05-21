@@ -10,19 +10,23 @@ import scrollToComponent from 'react-scroll-to-component';
 import { NavLink } from "react-router-dom";
 import SubHero from "Components/LandingPage/SectionHeroSub";
 import Footer from "Components/LandingPage/SectionFooter";
-import SectionNewsletter from "Components/LandingPage/SectionNewsletter";
 import LinesEllipsis from 'react-lines-ellipsis';
 import responsiveHOC from 'react-lines-ellipsis/lib/responsiveHOC';
 import { injectIntl } from 'react-intl';
 import { Colxx } from "Components/CustomBootstrap";
 import { connect } from "react-redux";
-import {landingPageMobileMenuToggle,landingPageMobileMenuClose} from "Redux/actions";
+import { landingPageMobileMenuToggle, landingPageMobileMenuClose } from "Redux/actions";
+import Reviews from "Components/LandingPage/SectionReviews";
 
 const ResponsiveEllipsis = responsiveHOC()(LinesEllipsis)
 
 const mapStateToProps = ({ landingPage }) => {
-  const { isMobileMenuOpen} = landingPage;
+  const { isMobileMenuOpen } = landingPage;
   return { isMobileMenuOpen };
+}
+
+const h2Style = {
+  color: "ORANGERED"
 }
 
 class Blog extends Component {
@@ -31,14 +35,14 @@ class Blog extends Component {
     this.onMenuClick = this.onMenuClick.bind(this);
   }
 
-  onMobileMenuToggle(){
+  onMobileMenuToggle() {
     this.props.landingPageMobileMenuToggle()
   }
-  onUnmountingMobileMenu(){
+  onUnmountingMobileMenu() {
     this.props.landingPageMobileMenuClose()
     return true;
   }
-  
+
   componentDidMount() {
     scrollToComponent(this["home"], { align: 'top', duration: 10 });
   }
@@ -53,7 +57,7 @@ class Blog extends Component {
         this.props.landingPageMobileMenuClose();
       });
     } else {
-      scrollToComponent(this[ref], { align: 'top'});
+      scrollToComponent(this[ref], { align: 'top' });
     }
   }
 
@@ -61,18 +65,19 @@ class Blog extends Component {
     const { messages } = this.props.intl;
     return (
       <Fragment>
-        <div className={this.props.isMobileMenuOpen?"landing-page show-mobile-menu":"landing-page"}>
-        <MenuMultipageMobile  onUnmountingMenu={()=>this.onUnmountingMobileMenu()}></MenuMultipageMobile>
+        <div className={this.props.isMobileMenuOpen ? "landing-page show-mobile-menu" : "landing-page"}>
+          <MenuMultipageMobile onUnmountingMenu={() => this.onUnmountingMobileMenu()}></MenuMultipageMobile>
           <div className="main-container">
 
             <Headroom className="landing-page-nav" ref={(x) => { this.headroom = x; }}>
-            <MenuMultipage onMobileMenuToggle={()=>this.onMobileMenuToggle()}></MenuMultipage>
+              <MenuMultipage onMobileMenuToggle={() => this.onMobileMenuToggle()}></MenuMultipage>
             </Headroom>
 
             <div className="content-container" ref={(x) => { this.home = x; }}>
               <div className="section home subpage">
                 <Container>
-                  <SubHero title={messages["lp.blogsection.title"]} detail={messages["lp.blogsection.detail"]} >
+                  <SubHero title={messages["bh.slogan.title"]}>
+                    <h2 style={h2Style}>Ngọn lửa của niềm tin</h2>
                   </SubHero>
                   <Row>
                     <NavLink className="btn btn-circle btn-outline-semi-light hero-circle-button" to="#" onClick={(event) => this.onMenuClick("content", event)}>
@@ -89,16 +94,16 @@ class Blog extends Component {
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
                           <NavLink to="/blog-detail">
-                            <img className="card-img-left" src="/assets/img/landing-page/blog-thumb-1.jpg" alt="Card cap" />
+                            <img className="card-img-left" src="/assets/img/oto.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
 
                         <div className="w-60 d-flex align-items-center">
                           <CardBody>
-                            <NavLink to="/blog-detail">
+                            <NavLink to="/bao-hiem-oto">
                               <h3 className="mb-4 listing-heading">
                                 <ResponsiveEllipsis
-                                  text={messages["lp.blogsection.title-1"]}
+                                  text={messages["bh.product.car"]}
                                   maxLine='2'
                                   ellipsis='...'
                                   trimRight
@@ -107,14 +112,14 @@ class Blog extends Component {
                             </NavLink>
                             <div className="listing-desc">
                               <ResponsiveEllipsis
-                                text={messages["lp.blogsection.detail-1"]}
+                                text={messages["bh.product.car.detail"]}
                                 maxLine='3'
                                 ellipsis='...'
                                 trimRight
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light">21.12.2018</p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>
@@ -124,10 +129,10 @@ class Blog extends Component {
                     <Colxx xxs="12" lg="6" className="mb-4">
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
-                          <NavLink to="/blog-detail" className="video-play-icon">
+                          <NavLink to="/bao-hiem-suc-khoe">
                             <span></span>
                           </NavLink>
-                          <img className="card-img-left" src="/assets/img/landing-page/blog-thumb-2.jpg" alt="Card cap" />
+                          <img className="card-img-left" src="/assets/img/staff.jpg" alt="Card cap" />
                         </div>
 
                         <div className="w-60 d-flex align-items-center">
@@ -135,7 +140,7 @@ class Blog extends Component {
                             <NavLink to="/blog-detail">
                               <h3 className="mb-4 listing-heading">
                                 <ResponsiveEllipsis
-                                  text={messages["lp.blogsection.title-2"]}
+                                  text={messages["bh.product.health.company"]}
                                   maxLine='2'
                                   ellipsis='...'
                                   trimRight
@@ -144,14 +149,14 @@ class Blog extends Component {
                             </NavLink>
                             <div className="listing-desc ellipsis">
                               <ResponsiveEllipsis
-                                text={messages["lp.blogsection.detail-2"]}
+                                text={messages["bh.product.health.company.detail"]}
                                 maxLine='3'
                                 ellipsis='...'
                                 trimRight
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light">18.12.2018</p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>
@@ -162,7 +167,7 @@ class Blog extends Component {
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
                           <NavLink to="/blog-detail">
-                            <img className="card-img-left" src="/assets/img/landing-page/blog-thumb-3.jpg" alt="Card cap" />
+                            <img className="card-img-left" src="/assets/img/bh_tainan.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
 
@@ -187,7 +192,7 @@ class Blog extends Component {
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light">04.12.2018</p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>
@@ -198,7 +203,7 @@ class Blog extends Component {
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
                           <NavLink to="/blog-detail">
-                            <img className="card-img-left" src="/assets/img/landing-page/blog-thumb-4.jpg" alt="Card cap" />
+                            <img className="card-img-left" src="/assets/img/family.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
 
@@ -207,7 +212,7 @@ class Blog extends Component {
                             <NavLink to="/blog-detail">
                               <h3 className="mb-4 listing-heading ellipsis">
                                 <ResponsiveEllipsis
-                                  text={messages["lp.blogsection.title-4"]}
+                                  text={messages["bh.product.health.family"]}
                                   maxLine='2'
                                   ellipsis='...'
                                   trimRight
@@ -216,14 +221,14 @@ class Blog extends Component {
                             </NavLink>
                             <div className="listing-desc ellipsis">
                               <ResponsiveEllipsis
-                                text={messages["lp.blogsection.detail-4"]}
+                                text={messages["bh.product.health.family.detail"]}
                                 maxLine='3'
                                 ellipsis='...'
                                 trimRight
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light">27.11.2018</p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>
@@ -259,7 +264,7 @@ class Blog extends Component {
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light">21.12.2018</p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>
@@ -295,7 +300,7 @@ class Blog extends Component {
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light">21.12.2018</p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>
@@ -342,6 +347,12 @@ class Blog extends Component {
                 </Container>
               </div>
 
+              <div className="section background">
+                <Container>
+                  <Reviews />
+                </Container>
+              </div>
+
               <div className="section footer mb-0">
                 <Footer onClick={this.onMenuClick} />
               </div>
@@ -353,4 +364,4 @@ class Blog extends Component {
     );
   }
 }
-export default connect(mapStateToProps, {landingPageMobileMenuToggle,landingPageMobileMenuClose})(injectIntl(Blog))
+export default connect(mapStateToProps, { landingPageMobileMenuToggle, landingPageMobileMenuClose })(injectIntl(Blog))

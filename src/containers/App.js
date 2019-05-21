@@ -21,7 +21,7 @@ import SinglepageHome from "Routes/landing-pages/singlepage-home";
 import About from "Routes/landing-pages/about";
 import AuthLogin from "Routes/landing-pages/auth-login";
 import AuthRegister from "Routes/landing-pages/auth-register";
-import Blog from "Routes/landing-pages/blog";
+import Home from "Routes/landing-pages/blog";
 import BlogDetail from "Routes/landing-pages/blog-detail";
 import Careers from "Routes/landing-pages/careers";
 import Confirmation from "Routes/landing-pages/confirmation";
@@ -80,16 +80,15 @@ class App extends Component {
         					<Route path={`/about`} component={About} />
         					<Route path={`/auth-login`} component={AuthLogin} />
         					<Route path={`/auth-register`} component={AuthRegister} />
-        					<Route path={`/blog`} component={Blog} />
-        					<Route path={`/home`} component={BlogDetail} />
+        					<Route path={`/home`} component={Home} />
         					<Route path={`/careers`} component={Careers} />
         					<Route path={`/confirmation`} component={Confirmation} />
         					<Route path={`/contact`} component={Contact} />
         					<Route path={`/content`} component={Content} />
         					<Route path={`/docs`} component={Docs} />
-							<Route path={`/bao-hiem-o-to`} component={MeaningLogo} />
-							<Route path={`/tin-tuc`} component={Blog} />
-							<Route path={`/gioi-thieu`} component={Blog} />
+							<Route path={`/bao-hiem-oto`} component={MeaningLogo} />
+							<Route path={`/tin-tuc`} component={Home} />
+							<Route path={`/gioi-thieu`} component={Home} />
 							<Route path={`/ky-yeu-cong-doan`} component={Docs} />
 							<Route path={`/ky-yeu-nhom-ducdiem`} component={Docs} />
 							<Route path={`/ky-yeu-nhom-khoaphuong`} component={Docs} />

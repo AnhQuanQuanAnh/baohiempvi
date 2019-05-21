@@ -19,24 +19,47 @@ export class MenuMultipage extends Component {
   render() {
     return (
       <Container className="d-flex align-items-center justify-content-between">
-        <NavLink className="navbar-logo pull-left" to="/multipage-home">
+        <NavLink className="navbar-logo pull-left" to="/home">
           <span className="white" />
         </NavLink>
         <Nav className="navbar-nav d-none d-lg-flex flex-row">
-          <NavItem className={window.location.pathname === '/tin-tuc' ? 'active' : ''}>
-            <NavLink to="/tin-tuc">
+          <NavItem className={window.location.pathname === '/home' ? 'active' : ''}>
+            <NavLink to="/home">
               <IntlMessages id="bh.menu.trangchu" />
             </NavLink>
           </NavItem>
           <NavItem className={window.location.pathname === '/y-nghia-logo' ? 'active' : ''}>
-            <NavLink to="/y-nghia-logo">
-              <IntlMessages id="bh.menu.pvicare" />
-            </NavLink>
+            <UncontrolledDropdown>
+              <DropdownToggle tag="a" caret color="empty" href="#">
+                <IntlMessages id="bh.menu.pvicare" />
+              </DropdownToggle>
+              <DropdownMenu>
+                <NavLink to="/docs" className="dropdown-item">
+                  <IntlMessages id="bh.menu.pvicare.comapy" />
+                </NavLink>
+                <NavLink to="/videos" className="dropdown-item">
+                  <IntlMessages id="bh.menu.pvicare.family" />
+                </NavLink>
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </NavItem>
-          <NavItem className={window.location.pathname === '/bao-hiem-o-to' ? 'active' : ''}>
-            <NavLink to="/bao-hiem-o-to">
-              <IntlMessages id="bh.menu.oto" />
-            </NavLink>
+          <NavItem className={window.location.pathname === '/bao-hiem-oto' || window.location.pathname === '/bao-hiem-oto' ? 'active' : ''}>
+            <UncontrolledDropdown>
+              <DropdownToggle tag="a" caret color="empty" href="#">
+                <IntlMessages id="bh.menu.oto" />
+              </DropdownToggle>
+              <DropdownMenu>
+                <NavLink to="/docs" className="dropdown-item">
+                  <IntlMessages id="bh.menu.oto.tnds" />
+                </NavLink>
+                <NavLink to="/videos" className="dropdown-item">
+                  <IntlMessages id="bh.menu.oto.2chieu" />
+                </NavLink>
+                <NavLink to="/videos" className="dropdown-item">
+                  <IntlMessages id="bh.menu.oto.xemay" />
+                </NavLink>
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </NavItem>
           <NavItem className={window.location.pathname === '/ky-yeu-cong-doan' ? 'active' : ''}>
             <NavLink to="/y-nghia-logo">
