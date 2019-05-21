@@ -176,7 +176,7 @@ class Blog extends Component {
                             <NavLink to="/blog-detail">
                               <h3 className="mb-4 listing-heading">
                                 <ResponsiveEllipsis
-                                  text={messages["lp.blogsection.title-3"]}
+                                  text={messages["bh.product.tainan"]}
                                   maxLine='2'
                                   ellipsis='...'
                                   trimRight

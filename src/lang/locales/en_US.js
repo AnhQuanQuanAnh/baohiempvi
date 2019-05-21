@@ -556,7 +556,7 @@ module.exports = {
   "bh.menu.oto.tnds": "Bảo hiểm trách nhiệm dân sự",
   "bh.menu.oto.2chieu": "Bảo hiểm ô tô 2 chiều",
   "bh.menu.oto.xemay": "Bảo hiểm xe máy",
-  "bh.menu.tainan": "BẢO HIỂM TAI NẠN CÁ NHÂN",
+  "bh.menu.tainan": "BẢO HIỂM TAI NẠN",
   "bh.menu.dulich": "BẢO HIỂM DU LỊCH",
   "bh.menu.lienhe": "LIÊN HỆ",
 
@@ -635,7 +635,7 @@ module.exports = {
   "bh.product.car.detail": "Theo quy định của Bộ tài chính cho các chủ xe khi lưu thông trên đường. Xe cơ giới là một nguồn nguy hiểm cao độ có thể gây ra tai nạn bất cứ lúc nào mà con người không thể lường trước được. Chính vì vậy việc xe cơ giới tham gia bảo hiểm trách nhiệm dân sự bắt buộc nhằm đảm bảo cho bên thứ 3 được chia sẽ và gánh vác rủi ro từ nhà bảo hiểm trong trường hợp các xe cơ giới gây tai nạn. Đây chính là ý nghĩa bắt buộc mà lực lượng cảnh sát giao thông yêu cầu kiểm tra đối với bảo hiểm xe.",
   "bh.product.health.company": "Bảo hiểm PVI care doanh nghiệp - Bảo hiểm sức khỏe doanh nghiệp",
   "bh.product.health.company.detail": "BẢO HIỂM PVI CARE DOANH NGHIỆP - BẢO HIỂM SỨC KHỎE DOANH NGHIỆP Sự khác biệt cảm nhận từ dịch vụ: – Không cần phải kiểm tra sức khỏe trước khi tham gia bảo hiểm – Sử dụng hệ thống bảo lãnh viện phí.",
-  "lp.blogsection.title-3": "Podcasting Operational Change Management Inside of Workflows",
+  "bh.product.tainan": "Bảo hiểm tai nạn 24/24",
   "lp.blogsection.detail-3": "Quickly deploy strategic networks with compelling e-business. Credibly pontificate highly efficient manufactured products and enabled data.",
   "bh.product.health.family": "Bảo hiểm PVI care cá nhân - Bảo hiểm sức khỏe toàn diện",
   "bh.product.health.family.detail": "Completely synergize resource taxing credibly pontificate highly efficient relationships via premier niche markets.",
