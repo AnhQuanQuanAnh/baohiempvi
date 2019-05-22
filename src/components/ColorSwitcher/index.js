@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import LinesEllipsis from 'react-lines-ellipsis';
+import { NavLink } from "react-router-dom";
+import responsiveHOC from 'react-lines-ellipsis/lib/responsiveHOC';
+
+const ResponsiveEllipsis = responsiveHOC()(LinesEllipsis)
 
 class ColorSwitcher extends Component {
 	constructor(props) {
@@ -14,7 +19,7 @@ class ColorSwitcher extends Component {
 
 		this.state = {
 			isOpen: true,
-			selectedColor:localStorage.getItem('themeColor')
+			selectedColor: localStorage.getItem('themeColor')
 		};
 	}
 
@@ -38,9 +43,9 @@ class ColorSwitcher extends Component {
 		e.preventDefault();
 		localStorage.setItem('themeColor', color)
 		this.toggle(e);
-		setTimeout(()=>{
+		setTimeout(() => {
 			window.location.reload();
-		},500)
+		}, 500)
 	}
 
 	componentWillMount() {
@@ -68,15 +73,18 @@ class ColorSwitcher extends Component {
 	}
 
 	render() {
-		const selectedColor = this.state.selectedColor
 		return (
 			<div className={`theme-colors ${this.state.isOpen ? 'shown' : ''}`}>
 				<div className="p-4">
 					<div className="d-flex flex-row justify-content-between mb-4">
-						<h4>Hotline: 0962480094</h4>
+						<h4>Hotline:<span className="text-danger font-weight-bold"> 0962480094</span></h4>
 					</div>
+					<NavLink to="/bao-hiem-oto">
+						<h3 className="text-danger font-weight-bold">
+							Hoặc liên hệ qua email
+						</h3>
+					</NavLink>
 				</div>
-				<a href="#" className="theme-button" onClick={this.toggle} > <i className="simple-icon-phone"></i> </a>
 			</div>
 		);
 	}

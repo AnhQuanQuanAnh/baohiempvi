@@ -565,8 +565,7 @@ module.exports = {
   "cd.home.title": "25 năm Sống Tin Mừng Tình Yêu",
   "cd.home.detail": "Mừng 25 năm ngân khánh đại gia đình Sống Tin Mừng Tình Yêu.",
 
-  "cd.yearbook.title": "Kỷ yếu Cộng Đoàn Sống Tin Mừng Tình Yêu.",
-  "cd.yearbook.detail": "Cuốn kỷ yếu với 250 trang chứa đựng những dấu ấn và chặng đường phát triển của Cộng đoàn sống tin mừng tình yêu.",
+  "cd.yearbook.title": "Bảo hiểm tai nạn 24h PVI",
 
   "lp.hero.line-1": "MAGIC IS IN",
   "lp.hero.line-2": "THE DETAILS",
@@ -626,7 +625,7 @@ module.exports = {
   "bh.footer.menu-1-4": "Điện thoại:",
   "bh.footer.menu-1-4-1": "0983876365 hoặc 0962480094",
   "bh.footer.menu-2": "Thư thông báo",
-  "bh.footer.menu-2-1": "Hãy nhập Email của bạn vào khung dưới và nhấn Đăng ký để nhận các thông tin khuyến mãi mới nhất từ chúng tôi.",
+  "bh.footer.menu-2-1": "Hãy nhập Email của bạn vào khung dưới và nhấn Đăng ký để nhận các thông tin ưu đãi mới nhất từ chúng tôi.",
   "bh.footer.copyright": "BẢN QUYỀN CỦA ĐẠI LÝ CÔNG TY BẢO HIỂM PVI SÀI GÒN © 2019",
 
   "bh.slogan.title": 'BẢO HIỂM PVI',
@@ -640,6 +639,8 @@ module.exports = {
   "bh.product.health.family": "Bảo hiểm PVI care cá nhân - Bảo hiểm sức khỏe toàn diện",
   "bh.product.health.family.detail": "Completely synergize resource taxing credibly pontificate highly efficient relationships via premier niche markets.",
   "lp.blogsection.title-5": "Assertively Iterate Resource Maximizing",
+  "bh.product.travel": "Bảo hiểm du lịch",
+  "bh.product.travel.detail": "Tại Bảo hiểm Sài Gòn, chúng tôi bảo hiểm gói dịch vụ du lịch trong nước và ngoài nước. Giá trị bảo hiểm lên đến 100.000 USD. Quý khách chọn mục dưới đây để tham khảo nội dung thông tin:",
 
   "lp.pricetable.title": "Pricing",
   "lp.pricetable.detail": "Humanitarian resist incubator movements outcomes. Low-hanging fruit synergy correlation accessibility; save the world unprecedented challenge scalable. Leverage strategy, and, game-changer, agile, social return on investment.",

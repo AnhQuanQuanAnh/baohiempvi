@@ -87,13 +87,17 @@ class Blog extends Component {
                 </Container>
               </div>
 
+              <Colxx xxs={{ size: "12", offset: 0 }} lg={{ size: 8, offset: 2 }} className="text-center">
+                <h1>Các sản phẩm của chúng tôi</h1>
+              </Colxx>
+
               <div className="section" ref={(x) => { this.content = x; }}>
                 <Container>
                   <Row className="mt-5">
                     <Colxx xxs="12" lg="6" className="mb-4">
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
-                          <NavLink to="/blog-detail">
+                          <NavLink to="/bao-hiem-oto">
                             <img className="card-img-left" src="/assets/img/oto.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
@@ -130,9 +134,8 @@ class Blog extends Component {
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
                           <NavLink to="/bao-hiem-suc-khoe">
-                            <span></span>
+                            <img className="card-img-left" src="/assets/img/staff.jpg" alt="Card cap" />
                           </NavLink>
-                          <img className="card-img-left" src="/assets/img/staff.jpg" alt="Card cap" />
                         </div>
 
                         <div className="w-60 d-flex align-items-center">
@@ -239,7 +242,7 @@ class Blog extends Component {
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
                           <NavLink to="/blog-detail">
-                            <img className="card-img-left" src="/assets/img/landing-page/blog-thumb-5.jpg" alt="Card cap" />
+                            <img className="card-img-left" src="/assets/img/travel.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
 
@@ -248,7 +251,7 @@ class Blog extends Component {
                             <NavLink to="/blog-detail">
                               <h3 className="mb-4 listing-heading">
                                 <ResponsiveEllipsis
-                                  text={messages["lp.blogsection.title-1"]}
+                                  text={messages["bh.product.travel"]}
                                   maxLine='2'
                                   ellipsis='...'
                                   trimRight
@@ -257,7 +260,7 @@ class Blog extends Component {
                             </NavLink>
                             <div className="listing-desc">
                               <ResponsiveEllipsis
-                                text={messages["lp.blogsection.detail-1"]}
+                                text={messages["bh.product.travel.detail"]}
                                 maxLine='3'
                                 ellipsis='...'
                                 trimRight

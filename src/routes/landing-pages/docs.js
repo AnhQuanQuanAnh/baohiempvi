@@ -1,8 +1,7 @@
 import React, { Component, Fragment } from "react";
 import {
-  Container, Row, Card, CardBody, Pagination, Badge,
-  PaginationItem,
-  PaginationLink
+  Container, Row, Card,
+  Table
 } from "reactstrap";
 import { MenuMultipage, MenuMultipageMobile } from "Components/LandingPage/SectionMenu";
 import Headroom from 'react-headroom';
@@ -19,6 +18,21 @@ import { landingPageMobileMenuToggle, landingPageMobileMenuClose } from "Redux/a
 const mapStateToProps = ({ landingPage }) => {
   const { isMobileMenuOpen } = landingPage;
   return { isMobileMenuOpen };
+}
+
+const spanStyle = {
+  color: "black",
+  fontWeight: 'bold'
+}
+
+const spanPriceStyle = {
+  color: "blue",
+  fontWeight: 'bold'
+}
+
+const h4Style = {
+  color : "orange",
+  fontWeight: 'bold'
 }
 
 class Docs extends Component {
@@ -67,13 +81,7 @@ class Docs extends Component {
             <div className="content-container" ref={(x) => { this.home = x; }}>
               <div className="section home subpage">
                 <Container>
-                  <SubHero title={messages["cd.yearbook.title"]} detail={messages["cd.yearbook.detail"]} >
-                    <div className="doc-search">
-                      <input placeholder={messages["lp.docs.search"]} />
-                      <span className="search-icon">
-                        <i className="simple-icon-magnifier"></i>
-                      </span>
-                    </div>
+                  <SubHero title={messages["cd.yearbook.title"]}>
                   </SubHero>
                   <Row>
                     <NavLink className="btn btn-circle btn-outline-semi-light hero-circle-button" to="#" onClick={(event) => this.onMenuClick("content", event)}>
@@ -83,148 +91,142 @@ class Docs extends Component {
                 </Container>
               </div>
 
+
               <div className="section" ref={(x) => { this.content = x; }}>
                 <Container>
                   <Row className="mt-5">
                     <Colxx xxs="12">
+                      <div className="d-flex flex-grow-1 min-width-zero">
+                        <h4><span style={spanStyle}>PHÍ BẢO HIỂM TỪ</span><span style={spanPriceStyle}> 67.500</span> <span style={spanStyle}>ĐẾN</span><span style={spanPriceStyle}> 900.000 VNĐ</span></h4>
+                      </div>
+                      <div className="d-flex flex-grow-1 min-width-zero">
+                        <h4><span style={spanStyle}>PHÍ BẢO HIỂM CHO GÓI</span><span style={spanPriceStyle}> 100 TRIỆU</span><span style={spanStyle}> LÀ</span><span style={spanPriceStyle}> 225.000 VNĐ</span></h4>
+                      </div>
+                    </Colxx>
+
+                    <Colxx xxs="12">
+                    </Colxx>
+
+                    <Colxx xxs="12">
+                      <div className="d-flex flex-grow-1 min-width-zero">
+                        <h3>GIẢM 45% PHÍ CHO SỐ LƯỢNG TRÊN 20 NGƯỜI</h3>
+                      </div>
+                    </Colxx>
+
+                    <Colxx xxs="12">
+                      <div className="d-flex flex-grow-1 min-width-zero">
+                        <h2>BIỂU PHÍ BẢO HIỂM TAI NẠN 24/24</h2>
+                      </div>
+                    </Colxx>
+
+                    <Colxx xxs="12">
 
                       <Card className="d-flex flex-row mb-3">
                         <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 1
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">18.11.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="secondary">BEGINNER</Badge>
-                            </div>
-                          </CardBody>
-                        </div>
-                      </Card>
-
-                      <Card className="d-flex flex-row mb-3">
-                        <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 2
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">12.11.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="secondary">BEGINNER</Badge>
-                            </div>
-                          </CardBody>
-                        </div>
-                      </Card>
-
-                      <Card className="d-flex flex-row mb-3">
-                        <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 3
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">04.11.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="secondary">BEGINNER</Badge>
-                            </div>
-                          </CardBody>
-                        </div>
-                      </Card>
-
-                      <Card className="d-flex flex-row mb-3">
-                        <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 4
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">04.11.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="secondary">BEGINNER</Badge>
-                            </div>
-                          </CardBody>
-                        </div>
-                      </Card>
-
-                      <Card className="d-flex flex-row mb-3">
-                        <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 5
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">27.10.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="primary">ADVANCED</Badge>
-                            </div>
-                          </CardBody>
-                        </div>
-                      </Card>
-
-                      <Card className="d-flex flex-row mb-3">
-                        <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 6
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">22.10.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="primary">ADVANCED</Badge>
-                            </div>
-                          </CardBody>
-                        </div>
-                      </Card>
-
-                      <Card className="d-flex flex-row mb-3">
-                        <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 7
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">16.10.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="primary">ADVANCED</Badge>
-                            </div>
-                          </CardBody>
-                        </div>
-                      </Card>
-
-                      <Card className="d-flex flex-row mb-3">
-                        <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 8
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">17.10.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="primary">ADVANCED</Badge>
-                            </div>
-                          </CardBody>
-                        </div>
-                      </Card>
-
-                      <Card className="d-flex flex-row mb-3">
-                        <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 9
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">17.10.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="primary">ADVANCED</Badge>
-                            </div>
-                          </CardBody>
-                        </div>
-                      </Card>
-
-                      <Card className="d-flex flex-row mb-3">
-                        <div className="d-flex flex-grow-1 min-width-zero">
-                          <CardBody className="align-self-center d-flex flex-column flex-md-row justify-content-between min-width-zero align-items-md-center">
-                            <NavLink className="list-item-heading mb-1 w-60 w-xs-100" to="/docs-detail">
-                              Trang 10
-                            </NavLink>
-                            <p className="mb-1 text-muted text-small w-15 w-xs-100">17.10.2018</p>
-                            <div className="w-20 w-xs-100 align-self-center d-flex justify-content-start justify-content-md-end">
-                              <Badge pill color="primary">ADVANCED</Badge>
-                            </div>
-                          </CardBody>
+                          <Table className="text-center" bordered hover>
+                            <thead>
+                              <tr>
+                                <th className="text-success font-weight-bold">MỨC BỒI THƯỜNG<br />
+                                  (VNĐ/Người/Năm)</th>
+                                <th className="text-success font-weight-bold">MUA TỪ 5 ĐẾN 20 NGƯỜI<br />
+                                  GIẢM 20%</th>
+                                <th className="text-success font-weight-bold">MUA TRÊN 20 NGƯỜI<br />
+                                  GIẢM 45%</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td className="text-primary">30 triệu đồng</td>
+                                <td className="text-info">72,000</td>
+                                <td className="text-danger">50,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">40 triệu đồng</td>
+                                <td className="text-info">96,000</td>
+                                <td className="text-danger">66,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">50 triệu đồng</td>
+                                <td className="text-info">72,000</td>
+                                <td className="text-danger">50,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">60 triệu đồng</td>
+                                <td className="text-info">144,000</td>
+                                <td className="text-danger">99,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">70 triệu đồng</td>
+                                <td className="text-info">168,000</td>
+                                <td className="text-danger">120,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">80 triệu đồng</td>
+                                <td className="text-info">192,000</td>
+                                <td className="text-danger">132,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">90 triệu đồng</td>
+                                <td className="text-info">216,000</td>
+                                <td className="text-danger">150,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">100 triệu đồng</td>
+                                <td className="text-info">240,000</td>
+                                <td className="text-danger">165,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">110 triệu đồng</td>
+                                <td className="text-info">396,000</td>
+                                <td className="text-danger">275,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">120 triệu đồng</td>
+                                <td className="text-info">432,000</td>
+                                <td className="text-danger">300,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">130 triệu đồng</td>
+                                <td className="text-info">468,000</td>
+                                <td className="text-danger">325,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">140 triệu đồng</td>
+                                <td className="text-info">504,000</td>
+                                <td className="text-danger">350,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">150 triệu đồng</td>
+                                <td className="text-info">540,000</td>
+                                <td className="text-danger">375,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">160 triệu đồng</td>
+                                <td className="text-info">768,000</td>
+                                <td className="text-danger">530,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">170 triệu đồng</td>
+                                <td className="text-info">816,000</td>
+                                <td className="text-danger">565,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">180 triệu đồng</td>
+                                <td className="text-info">864,000</td>
+                                <td className="text-danger">600,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">190 triệu đồng</td>
+                                <td className="text-info">912,000</td>
+                                <td className="text-danger">630,000</td>
+                              </tr>
+                              <tr>
+                                <td className="text-primary">200 triệu đồng</td>
+                                <td className="text-info">960,000</td>
+                                <td className="text-danger">660,000</td>
+                              </tr>
+                            </tbody>
+                          </Table>
                         </div>
                       </Card>
 
@@ -232,74 +234,20 @@ class Docs extends Component {
                   </Row>
 
                   <Row>
-                    <Colxx xxs="12" className="text-center mt-5 mb-5">
-                      <Pagination aria-label="Page navigation example" listClassName="justify-content-center">
-                        <PaginationItem>
-                          <PaginationLink className="first" href="#">
-                            <i className="simple-icon-control-start" />
-                          </PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink className="prev" href="#">
-                            <i className="simple-icon-arrow-left" />
-                          </PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">1</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem active>
-                          <PaginationLink href="#">2</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">3</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">4</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">5</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">6</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">7</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">8</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">9</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">10</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">11</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">12</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">13</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">14</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink href="#">15</PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink className="next" href="#">
-                            <i className="simple-icon-arrow-right" />
-                          </PaginationLink>
-                        </PaginationItem>
-                        <PaginationItem>
-                          <PaginationLink className="last" href="#">
-                            <i className="simple-icon-control-end" />
-                          </PaginationLink>
-                        </PaginationItem>
-                      </Pagination>
+                    <Colxx></Colxx>
+                    <Colxx xxs="12">
+                      <div className="d-flex flex-grow-1 min-width-zero">
+                        <h4 style={h4Style}>QUY TRÌNH THAM GIA ĐƠN GIẢN, NHANH CHÓNG</h4>
+                      </div>
+                      <div className="d-flex flex-grow-1 min-width-zero">
+                        <h5>Quý khách có thể gọi hoặc kết bạn Zalo qua SĐT:<span className="text-danger font-italic"> 0962480094</span> hoặc gửi thông tin về email: <span className="text-danger font-italic">phamanhquan0203@gmail.com</span> để được tư vấn miễn phí.</h5>
+                      </div>
+                    </Colxx>
+                    <Colxx></Colxx>
+                    <Colxx xxs="12">
+                      <div className="d-flex flex-grow-1 min-width-zero">
+                        <h3>Quý khách gửi thông tin của nhân viên cần được bảo hiểm qua số Zalo hoặc email này, bao gồm: Họ và Tên, Năm sinh và Số CMND.</h3>
+                      </div>
                     </Colxx>
                   </Row>
                 </Container>

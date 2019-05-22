@@ -89,10 +89,10 @@ class App extends Component {
 							<Route path={`/bao-hiem-oto`} component={MeaningLogo} />
 							<Route path={`/tin-tuc`} component={Home} />
 							<Route path={`/gioi-thieu`} component={Home} />
-							<Route path={`/ky-yeu-cong-doan`} component={Docs} />
-							<Route path={`/ky-yeu-nhom-ducdiem`} component={Docs} />
-							<Route path={`/ky-yeu-nhom-khoaphuong`} component={Docs} />
-							<Route path={`/tu-lieu-phim-anh`} component={Videos} />
+							<Route path={`/bao-hiem-tai-nan`} component={Docs} />
+							<Route path={`/bao-hiem-du-lich`} component={Docs} />
+							<Route path={`/bao-hiem-suc-khoe-doanh-nghiep`} component={Docs} />
+							<Route path={`/bao-hiem-suc-khoe-ca-nhan`} component={Videos} />
         					<Route path={`/prices`} component={Prices} />
         					<Route path={`/videos`} component={Videos} />
         					<Route path={`/video-detail`} component={VideoDetail} />

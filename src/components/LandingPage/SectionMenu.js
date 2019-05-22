@@ -61,13 +61,13 @@ export class MenuMultipage extends Component {
               </DropdownMenu>
             </UncontrolledDropdown>
           </NavItem>
-          <NavItem className={window.location.pathname === '/ky-yeu-cong-doan' ? 'active' : ''}>
-            <NavLink to="/y-nghia-logo">
+          <NavItem className={window.location.pathname === '/bao-hiem-tai-nan' ? 'active' : ''}>
+            <NavLink to="/bao-hiem-tai-nan">
               <IntlMessages id="bh.menu.tainan" />
             </NavLink>
           </NavItem>
-          <NavItem className={window.location.pathname === '/tu-lieu-phim-anh' ? 'active' : ''}>
-            <NavLink to="/tu-lieu-phim-anh">
+          <NavItem className={window.location.pathname === '/bao-hiem-du-lich' ? 'active' : ''}>
+            <NavLink to="/bao-hiem-du-lich">
               <IntlMessages id="bh.menu.dulich" />
             </NavLink>
           </NavItem>
