@@ -550,22 +550,19 @@ module.exports = {
 
   "bh.menu.trangchu": "TRANG CHỦ",
   "bh.menu.pvicare": "BẢO HIỂM SỨC KHỎE",
-  "bh.menu.pvicare.comapy": "Bảo hiểm PVI care doanh nghiệp",
-  "bh.menu.pvicare.family": "Bảo hiểm PVI care cá nhân",
-  "bh.menu.oto": "BẢO HIỂM Ô TÔ - XE MÁY",
-  "bh.menu.oto.tnds": "Bảo hiểm trách nhiệm dân sự",
-  "bh.menu.oto.2chieu": "Bảo hiểm ô tô 2 chiều",
-  "bh.menu.oto.xemay": "Bảo hiểm xe máy",
+  "bh.menu.pvicare.comapy": "Bảo Hiểm PVI Care Doanh Nghiệp",
+  "bh.menu.pvicare.family": "Bảo Hiểm PVI Care Cá Nhân",
+  "bh.menu.oto": "BẢO HIỂM Ô TÔ",
+  "bh.menu.oto.tnds": "Bảo Hiểm Trách Nhiệm Dân Sự Của Chủ Xe Ô Tô",
+  "bh.menu.oto.2chieu": "Bảo Hiểm Vật Chất Xe Ô Tô",
   "bh.menu.tainan": "BẢO HIỂM TAI NẠN",
   "bh.menu.dulich": "BẢO HIỂM DU LỊCH",
   "bh.menu.lienhe": "LIÊN HỆ",
 
   "bh.email.placeholder": "Địa chỉ E-mail",
   "bh.button.regist": "Đăng kí",
-  "cd.home.title": "25 năm Sống Tin Mừng Tình Yêu",
-  "cd.home.detail": "Mừng 25 năm ngân khánh đại gia đình Sống Tin Mừng Tình Yêu.",
 
-  "cd.yearbook.title": "Bảo hiểm tai nạn 24h PVI",
+  "bh.tainan.title": "Bảo Hiểm Tai Nạn 24h PVI",
 
   "lp.hero.line-1": "MAGIC IS IN",
   "lp.hero.line-2": "THE DETAILS",
@@ -641,6 +638,8 @@ module.exports = {
   "lp.blogsection.title-5": "Assertively Iterate Resource Maximizing",
   "bh.product.travel": "Bảo hiểm du lịch",
   "bh.product.travel.detail": "Tại Bảo hiểm Sài Gòn, chúng tôi bảo hiểm gói dịch vụ du lịch trong nước và ngoài nước. Giá trị bảo hiểm lên đến 100.000 USD. Quý khách chọn mục dưới đây để tham khảo nội dung thông tin:",
+  "bh.product.motobike": "Bảo hiểm xe máy",
+  "bh.product.motobike.detail": "Tại Bảo hiểm Sài Gòn, chúng tôi bảo hiểm gói dịch vụ du lịch trong nước và ngoài nước. Giá trị bảo hiểm lên đến 100.000 USD. Quý khách chọn mục dưới đây để tham khảo nội dung thông tin:",
 
   "lp.pricetable.title": "Pricing",
   "lp.pricetable.detail": "Humanitarian resist incubator movements outcomes. Low-hanging fruit synergy correlation accessibility; save the world unprecedented challenge scalable. Leverage strategy, and, game-changer, agile, social return on investment.",

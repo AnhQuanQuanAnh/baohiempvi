@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Redirect, Route, Switch} from 'react-router-dom';
 import { IntlProvider} from 'react-intl';
 
-import ColorSwitcher from 'Components/ColorSwitcher'
+import ContactBar from 'Components/ContactBar'
 import {  NotificationContainer} from "Components/ReactNotifications";
 
 import { defaultStartPath } from 'Constants/defaultValues'
@@ -83,7 +83,7 @@ class App extends Component {
         					<Route path={`/home`} component={Home} />
         					<Route path={`/careers`} component={Careers} />
         					<Route path={`/confirmation`} component={Confirmation} />
-        					<Route path={`/contact`} component={Contact} />
+        					<Route path={`/lien-he`} component={Contact} />
         					<Route path={`/content`} component={Content} />
         					<Route path={`/docs`} component={Docs} />
 							<Route path={`/bao-hiem-oto`} component={MeaningLogo} />
@@ -104,7 +104,7 @@ class App extends Component {
 							<Route path={`/error`} component={error} />
 							<Redirect to="/error" />
 						</Switch>
-						<ColorSwitcher />
+						<ContactBar />
 					</Fragment>
 				</IntlProvider>
 			</Fragment>

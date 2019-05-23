@@ -55,9 +55,6 @@ export class MenuMultipage extends Component {
                 <NavLink to="/videos" className="dropdown-item">
                   <IntlMessages id="bh.menu.oto.2chieu" />
                 </NavLink>
-                <NavLink to="/videos" className="dropdown-item">
-                  <IntlMessages id="bh.menu.oto.xemay" />
-                </NavLink>
               </DropdownMenu>
             </UncontrolledDropdown>
           </NavItem>
@@ -71,8 +68,8 @@ export class MenuMultipage extends Component {
               <IntlMessages id="bh.menu.dulich" />
             </NavLink>
           </NavItem>
-          <NavItem className={window.location.pathname === '/hau-truong' ? 'active' : ''}>
-            <NavLink to="/hau-truong">
+          <NavItem className={window.location.pathname === '/lien-he' ? 'active' : ''}>
+            <NavLink to="/lien-he">
               <IntlMessages id="bh.menu.lienhe" />
             </NavLink>
           </NavItem>
@@ -117,12 +114,12 @@ export class MenuMultipageMobile extends React.Component {
   render() {
     return (
       <div className="mobile-menu">
-        <NavLink className="logo-mobile" to="/multipage-home">
+        <NavLink className="logo-mobile" to="/home">
           <span />
         </NavLink>
         <Nav className="navbar-nav">
-          <NavItem className={window.location.pathname === '/meaning-logo' ? 'active' : ''}>
-            <NavLink to="/meaning-logo">
+          <NavItem className={window.location.pathname === '/home' ? 'active' : ''}>
+            <NavLink to="/home">
               <IntlMessages id="bh.menu.trangchu" />
             </NavLink>
           </NavItem>
@@ -160,8 +157,8 @@ export class MenuMultipageMobile extends React.Component {
               <IntlMessages id="cd.menu.about" />
             </NavLink>
           </NavItem>
-          <NavItem className={window.location.pathname === '/blog' ? 'active' : ''}>
-            <NavLink to="/blog">
+          <NavItem className={window.location.pathname === '/lien-he' ? 'active' : ''}>
+            <NavLink to="/lien-he">
               <IntlMessages id="cd.menu.contact" />
             </NavLink>
           </NavItem>

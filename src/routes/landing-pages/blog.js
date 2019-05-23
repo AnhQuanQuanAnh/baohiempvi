@@ -278,7 +278,7 @@ class Blog extends Component {
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
                           <NavLink to="/blog-detail">
-                            <img className="card-img-left" src="/assets/img/landing-page/blog-thumb-2.jpg" alt="Card cap" />
+                            <img className="card-img-left" src="/assets/img/motobike.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
 
@@ -287,7 +287,7 @@ class Blog extends Component {
                             <NavLink to="/blog-detail">
                               <h3 className="mb-4 listing-heading">
                                 <ResponsiveEllipsis
-                                  text={messages["lp.blogsection.title-3"]}
+                                  text={messages["bh.product.motobike"]}
                                   maxLine='2'
                                   ellipsis='...'
                                   trimRight
@@ -296,7 +296,7 @@ class Blog extends Component {
                             </NavLink>
                             <div className="listing-desc">
                               <ResponsiveEllipsis
-                                text={messages["lp.blogsection.detail-2"]}
+                                text={messages["bh.product.motobike.detail"]}
                                 maxLine='3'
                                 ellipsis='...'
                                 trimRight
