@@ -77,7 +77,7 @@ class Blog extends Component {
               <div className="section home subpage">
                 <Container>
                   <SubHero title={messages["bh.slogan.title"]}>
-                    <h2 style={h2Style}>Ngọn lửa của niềm tin</h2>
+                    <h1 style={h2Style}>Ngọn lửa của niềm tin</h1>
                   </SubHero>
                   <Row>
                     <NavLink className="btn btn-circle btn-outline-semi-light hero-circle-button" to="#" onClick={(event) => this.onMenuClick("content", event)}>
@@ -97,14 +97,14 @@ class Blog extends Component {
                     <Colxx xxs="12" lg="6" className="mb-4">
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
-                          <NavLink to="/bao-hiem-oto">
+                          <NavLink to="/bao-hiem-oto-tnds">
                             <img className="card-img-left" src="/assets/img/oto.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
 
                         <div className="w-60 d-flex align-items-center">
                           <CardBody>
-                            <NavLink to="/bao-hiem-oto">
+                            <NavLink to="/bao-hiem-oto-tnds">
                               <h3 className="mb-4 listing-heading">
                                 <ResponsiveEllipsis
                                   text={messages["bh.product.car"]}
@@ -123,7 +123,7 @@ class Blog extends Component {
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto">Chi tiết</NavLink></p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto-tnds">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>
@@ -159,7 +159,7 @@ class Blog extends Component {
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto">Chi tiết</NavLink></p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto-tnds">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>

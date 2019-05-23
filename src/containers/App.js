@@ -28,7 +28,7 @@ import Confirmation from "Routes/landing-pages/confirmation";
 import Contact from "Routes/landing-pages/contact";
 import Content from "Routes/landing-pages/content";
 import Docs from "Routes/landing-pages/docs";
-import MeaningLogo from "Routes/landing-pages/meaning-logo";
+import OtoTNDS from "Routes/landing-pages/oto-tnds";
 import Prices from "Routes/landing-pages/prices";
 import Videos from "Routes/landing-pages/videos";
 import VideoDetail from "Routes/landing-pages/video-detail";
@@ -86,7 +86,7 @@ class App extends Component {
         					<Route path={`/lien-he`} component={Contact} />
         					<Route path={`/content`} component={Content} />
         					<Route path={`/docs`} component={Docs} />
-							<Route path={`/bao-hiem-oto`} component={MeaningLogo} />
+							<Route path={`/bao-hiem-oto-tnds`} component={OtoTNDS} />
 							<Route path={`/tin-tuc`} component={Home} />
 							<Route path={`/gioi-thieu`} component={Home} />
 							<Route path={`/bao-hiem-tai-nan`} component={Docs} />

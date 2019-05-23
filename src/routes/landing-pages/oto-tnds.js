@@ -38,7 +38,7 @@ const th3Style = {
 };
 
 
-class MeaningLogo extends Component {
+class OtoTNDS extends Component {
   constructor(props) {
     super(props);
     this.onMenuClick = this.onMenuClick.bind(this);
@@ -352,4 +352,4 @@ class MeaningLogo extends Component {
     );
   }
 }
-export default connect(mapStateToProps, { landingPageMobileMenuToggle, landingPageMobileMenuClose })(injectIntl(MeaningLogo))
+export default connect(mapStateToProps, { landingPageMobileMenuToggle, landingPageMobileMenuClose })(injectIntl(OtoTNDS))

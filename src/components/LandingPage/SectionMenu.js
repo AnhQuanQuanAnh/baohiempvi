@@ -43,13 +43,13 @@ export class MenuMultipage extends Component {
               </DropdownMenu>
             </UncontrolledDropdown>
           </NavItem>
-          <NavItem className={window.location.pathname === '/bao-hiem-oto' || window.location.pathname === '/bao-hiem-oto' ? 'active' : ''}>
+          <NavItem className={window.location.pathname === '/bao-hiem-oto-tnds' || window.location.pathname === '/bao-hiem-oto' ? 'active' : ''}>
             <UncontrolledDropdown>
               <DropdownToggle tag="a" caret color="empty" href="#">
                 <IntlMessages id="bh.menu.oto" />
               </DropdownToggle>
               <DropdownMenu>
-                <NavLink to="/docs" className="dropdown-item">
+                <NavLink to="/bao-hiem-oto-tnds" className="dropdown-item">
                   <IntlMessages id="bh.menu.oto.tnds" />
                 </NavLink>
                 <NavLink to="/videos" className="dropdown-item">
