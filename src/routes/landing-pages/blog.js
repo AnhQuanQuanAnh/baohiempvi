@@ -169,7 +169,7 @@ class Blog extends Component {
                     <Colxx xxs="12" lg="6" className="mb-4">
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
-                          <NavLink to="/blog-detail">
+                          <NavLink to="/bao-hiem-tai-nan">
                             <img className="card-img-left" src="/assets/img/bh_tainan.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
@@ -195,7 +195,7 @@ class Blog extends Component {
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto">Chi tiết</NavLink></p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-tai-nan">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>

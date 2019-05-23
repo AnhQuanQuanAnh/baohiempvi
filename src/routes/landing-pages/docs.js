@@ -246,7 +246,12 @@ class Docs extends Component {
                     <Colxx></Colxx>
                     <Colxx xxs="12">
                       <div className="d-flex flex-grow-1 min-width-zero">
-                        <h3>Quý khách gửi thông tin của nhân viên cần được bảo hiểm qua số Zalo hoặc email này, bao gồm: Họ và Tên, Năm sinh và Số CMND.</h3>
+                        <h3>Quý khách gửi thông tin của nhân viên cần được bảo hiểm qua số Zalo hoặc email ở phía trên, bao gồm: Họ và tên, Năm sinh và Số CMND.</h3>
+                      </div>
+                    </Colxx>
+                    <Colxx xxs="12">
+                      <div className="d-flex flex-grow-1 min-width-zero">
+                        <h4>Sau khi hoàn tất thông tin, quý khách sẽ nhận giấy chứng nhận bảo hiểm trong vòng 1h đồng hồ bằng đường chuyển phát nhanh của các dịch vụ giao hành tận tay. Phí dịch vụ được tính dựa trên khoảng cách giữa Bảo hiểm Sài Gòn với vị trí quý khách cần nhận.</h4>
                       </div>
                     </Colxx>
                   </Row>
