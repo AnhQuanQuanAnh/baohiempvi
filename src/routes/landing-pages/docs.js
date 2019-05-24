@@ -14,7 +14,7 @@ import scrollToComponent from 'react-scroll-to-component';
 import { NavLink } from "react-router-dom";
 import SubHero from "Components/LandingPage/SectionHeroSub";
 import Footer from "Components/LandingPage/SectionFooter";
-import SectionNewsletter from "Components/LandingPage/SectionNewsletter";
+import SectionProducts from "Components/LandingPage/SectionProducts";
 import { injectIntl } from 'react-intl';
 import { Colxx } from "Components/CustomBootstrap";
 
@@ -378,6 +378,12 @@ class Docs extends Component {
 
                     </Colxx>
                   </Row>
+                </Container>
+              </div>
+
+              <div className="section background">
+                <Container>
+                  <SectionProducts />
                 </Container>
               </div>
 

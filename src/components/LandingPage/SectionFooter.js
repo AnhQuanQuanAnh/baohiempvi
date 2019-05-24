@@ -130,18 +130,18 @@ class SectionHero extends React.Component {
                 <Container className="copyright pt-5 pb-5">
                     <Row>
                         <div className="col-6">
-                            <p className="mb-0 font-weight-bold"><IntlMessages id="bh.footer.copyright" /></p>
+                            <p className="mb-0 font-weight-bold"><IntlMessages id="bh.footer.copyright" /></p> 
                         </div>
                         <div className="col-6 text-right social-icons">
                             <ul className="list-unstyled list-inline">
                                 <li className="list-inline-item">
-                                    <a href="#"><i className="simple-icon-social-facebook font-weight-bold"></i></a>
+                                    <a href="https://goo.gl/maps/Giw2y12fUenP7tmY9"><i className="iconsmind-Map-Marker2 font-weight-bold"></i></a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="#"><i className="simple-icon-social-twitter font-weight-bold"></i></a>
+                                    <a href="https://www.facebook.com/pvionline/"><i className="simple-icon-social-facebook font-weight-bold"></i></a>
                                 </li>
                                 <li className="list-inline-item">
-                                    <a href="#"><i className="simple-icon-social-instagram font-weight-bold"></i></a>
+                                    <a href="https://www.instagram.com/explore/locations/122107574648523/pvi-sai-gon-75-ngo-thoi-nhiem/"><i className="simple-icon-social-instagram font-weight-bold"></i></a>
                                 </li>
                             </ul>
                         </div>

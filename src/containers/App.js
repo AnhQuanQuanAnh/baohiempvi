@@ -17,7 +17,6 @@ import error from 'Routes/layouts/error'
 import forgotPassword from 'Routes/layouts/forgot-password'
 
 import MultipageHome from "Routes/landing-pages/multipage-home";
-import SinglepageHome from "Routes/landing-pages/singlepage-home";
 import About from "Routes/landing-pages/about";
 import AuthLogin from "Routes/landing-pages/auth-login";
 import AuthRegister from "Routes/landing-pages/auth-register";
@@ -76,7 +75,6 @@ class App extends Component {
 							component={MainRoute}
 						/>
         					<Route path={`/multipage-home`} component={MultipageHome} />
-        					<Route path={`/singlepage-home`} component={SinglepageHome} />
         					<Route path={`/about`} component={About} />
         					<Route path={`/auth-login`} component={AuthLogin} />
         					<Route path={`/auth-register`} component={AuthRegister} />

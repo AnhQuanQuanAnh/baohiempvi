@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Container, Row, CardTitle } from "reactstrap";
+import { Container, Row } from "reactstrap";
 import { MenuMultipage, MenuMultipageMobile } from "Components/LandingPage/SectionMenu";
 import Headroom from 'react-headroom';
 import scrollToComponent from 'react-scroll-to-component';
@@ -15,6 +15,17 @@ import { landingPageMobileMenuToggle, landingPageMobileMenuClose } from "Redux/a
 const mapStateToProps = ({ landingPage }) => {
   const { isMobileMenuOpen } = landingPage;
   return { isMobileMenuOpen };
+}
+
+const mapStyle = {
+  width: "800",
+  height: "500",
+  frameborder: "0",
+  border: "0"
+}
+
+const h2Style = {
+  color: "ORANGERED"
 }
 
 class Contact extends Component {
@@ -64,7 +75,9 @@ class Contact extends Component {
             <div className="content-container" ref={(x) => { this.home = x; }}>
               <div className="section home subpage">
                 <Container>
-                  <SubHero title={messages["lp.contact.title"]} detail={messages["lp.contact.detail"]} />
+                  <SubHero title={messages["bh.slogan.title"]}>
+                    <h1 style={h2Style}>Ngọn lửa của niềm tin</h1>
+                  </SubHero>
                   <Row>
                     <NavLink className="btn btn-circle btn-outline-semi-light hero-circle-button" to="#" onClick={(event) => this.onMenuClick("content", event)}>
                       <i className="simple-icon-arrow-down"></i>
@@ -77,29 +90,20 @@ class Contact extends Component {
                 <Container>
                   <Row>
                     <Colxx xxs="12" lg="7">
-                      <h2>Contact Form</h2>
+                      <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
                       <div className="card">
                         <div className="card-body">
 
-                          <CardTitle>
-                            Reach Us
-                        </CardTitle>
-
                           <form>
-                            <label className="form-group has-top-label">
-                              <input className="form-control" placeholder="" />
-                              <span>NAME</span>
-                            </label>
+                            <h3>Tên của quý khách</h3>
+                            <input className="form-control" placeholder="" />
+                            <h3>Số điện thoại</h3>
+                            <input className="form-control" />
+                            <h3>E-mail</h3>
+                            <input className="form-control" />
 
-                            <label className="form-group has-top-label">
-                              <input className="form-control" />
-                              <span>E-MAIL</span>
-                            </label>
-
-                            <label className="form-group has-top-label">
-                              <textarea className="form-control" rows="4"></textarea>
-                              <span>MESSAGE</span>
-                            </label>
+                            <h3>Lời nhắn của quý khách cần hỗ trợ</h3>
+                            <textarea className="form-control" rows="4"></textarea>
 
                             <a href="#" className="btn btn-primary btn-multiple-state float-right" id="contactButton">
                               <div className="spinner d-inline-block">
@@ -115,7 +119,7 @@ class Contact extends Component {
                                 title="Something went wrong!">
                                 <i className="simple-icon-exclamation"></i>
                               </span>
-                              <span className="label ">Send</span>
+                              <span className="label ">Gửi</span>
                             </a>
                           </form>
                         </div>
@@ -123,18 +127,25 @@ class Contact extends Component {
                     </Colxx>
 
                     <Colxx xxs="12" lg={{ size: 4, offset: 1 }} className="side-bar">
-                      <h2>Contact Info</h2>
+                      <h2>BẢO HIỂM PVI SÀI GÒN</h2>
 
-                      <p className="text-primary mb-2">Address</p>
-                      <p className="mb-5">35 Little Russell St Bloomsbury London<br />WC1A 2HH UK</p>
+                      <p className="text-primary mb-2">Địa chỉ</p>
+                      <p className="mb-5">Lầu 6 Tòa nhà Central Park, số 117-119-121 Nguyễn Du, P.Bến Thành, Q.1, TP.HCM</p>
 
-                      <p className="text-primary mb-2">Phone</p>
-                      <p className="mb-0">+00 42 287 2686</p>
-                      <p className="mb-5">+00 42 287 2685</p>
+                      <p className="text-primary mb-2">Điện thoại</p>
+                      <p className="mb-0">+84 962480094</p>
+                      <p className="mb-5">+84 902379864</p>
 
                       <p className="text-primary mb-2">E-mail</p>
-                      <p className="mb-0">info@woodentoys.com</p>
+                      <p className="mb-0">baohiem@pvi.com</p>
+
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.494484958826!2d106.69221061526042!3d10.773388362194623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f251d1b5541%3A0xfa5170cfafdddeb7!2zQ8OUTkcgVFkgQuG6ok8gSEnhu4JNIFBWSSBTw4BJIEfDkk4!5e0!3m2!1svi!2s!4v1558665512387!5m2!1svi!2s" styl={mapStyle} allowFullScreen></iframe>
                     </Colxx>
+                    <Colxx>
+                    </Colxx>
+                  </Row>
+
+                  <Row>
                   </Row>
 
                 </Container>

@@ -10,7 +10,7 @@ import scrollToComponent from 'react-scroll-to-component';
 import { NavLink } from "react-router-dom";
 import SubHero from "Components/LandingPage/SectionHeroSub";
 import Footer from "Components/LandingPage/SectionFooter";
-import FeaturesIcons from "Components/LandingPage/SectionFeaturesIcons";
+import SectionProducts from "Components/LandingPage/SectionProducts";
 import { Colxx } from "Components/CustomBootstrap";
 import { injectIntl } from 'react-intl';
 
@@ -339,6 +339,12 @@ class OtoTNDS extends Component {
                     </Table>
                   </Container>
                 </div>
+              </div>
+
+              <div className="section background">
+                <Container>
+                  <SectionProducts />
+                </Container>
               </div>
 
               <div className="section footer mb-0">
