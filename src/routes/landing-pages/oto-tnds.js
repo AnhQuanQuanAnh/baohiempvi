@@ -26,15 +26,11 @@ const h4Style = {
 };
 
 const th1Style = {
-  width: '200px'
+  width: '100px'
 };
 
 const th2Style = {
-  width: '355px'
-};
-
-const th3Style = {
-  width: '350px'
+  width: '325px'
 };
 
 
@@ -95,17 +91,17 @@ class OtoTNDS extends Component {
               </div>
 
               <div className="section" ref={(x) => { this.content = x; }}>
-                <h2 align="center">Biểu phí TNDS Bắt buộc các loại Ô tô</h2>
+                <h2 align="center">BIỂU PHÍ TRÁCH NHIỆM DÂN SỰ BẮT BUỘC CÁC LOẠI Ô TÔ</h2>
                 <div>
                   <Container>
                     <h4 style={h4Style}>XE KHÔNG KINH DOANH</h4>
-                    <Table bordered>
+                    <Table bordered hover className="text-center">
                       <thead>
                         <tr>
-                          <th>STT</th>
-                          <th>Loại xe</th>
-                          <th>Phí bảo hiểm</th>
-                          <th>Tổng phí</th>
+                          <th className="text-success font-weight-bold" style={th1Style}>STT</th>
+                          <th className="text-success font-weight-bold">Loại Xe</th>
+                          <th className="text-success font-weight-bold">Phí Chưa VAT</th>
+                          <th className="text-success font-weight-bold">Phí Bao Gồm VAT</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -200,13 +196,13 @@ class OtoTNDS extends Component {
                 <div>
                   <Container>
                     <h4 style={h4Style}>XE CÓ KINH DOANH</h4>
-                    <Table bordered>
+                    <Table bordered hover className="text-center">
                       <thead>
                         <tr>
-                          <th style={th1Style}>STT</th>
-                          <th style={th2Style}>Loại xe</th>
-                          <th>Phí bảo hiểm</th>
-                          <th>Tổng phí</th>
+                          <th className="text-success font-weight-bold" style={th1Style}>STT</th>
+                          <th className="text-success font-weight-bold" style={th2Style}>Loại xe</th>
+                          <th className="text-success font-weight-bold">Phí Chưa VAT</th>
+                          <th className="text-success font-weight-bold">Phí Bao Gồm VAT</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -295,13 +291,13 @@ class OtoTNDS extends Component {
                 <div>
                   <Container>
                     <h4 style={h4Style}>CÁC LOẠI XE TẢI</h4>
-                    <Table bordered>
+                    <Table bordered hover className="text-center">
                       <thead>
                         <tr>
-                          <th>STT</th>
-                          <th style={th3Style}>Loại xe</th>
-                          <th>Phí bảo hiểm</th>
-                          <th>Tổng phí</th>
+                          <th className="text-success font-weight-bold" style={th1Style}>STT</th>
+                          <th className="text-success font-weight-bold" style={th2Style}>Loại Xe</th>
+                          <th className="text-success font-weight-bold">Phí Chưa VAT</th>
+                          <th className="text-success font-weight-bold">Phí Bao Gồm VAT</th>
                         </tr>
                       </thead>
                       <tbody>
