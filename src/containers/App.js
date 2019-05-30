@@ -28,6 +28,7 @@ import Contact from "Routes/landing-pages/contact";
 import Content from "Routes/landing-pages/content";
 import Docs from "Routes/landing-pages/docs";
 import OtoTNDS from "Routes/landing-pages/oto-tnds";
+import OtoVatChat from "Routes/landing-pages/oto-vatchat";
 import Prices from "Routes/landing-pages/prices";
 import Videos from "Routes/landing-pages/videos";
 import VideoDetail from "Routes/landing-pages/video-detail";
@@ -85,6 +86,7 @@ class App extends Component {
         					<Route path={`/content`} component={Content} />
         					<Route path={`/docs`} component={Docs} />
 							<Route path={`/bao-hiem-oto-tnds`} component={OtoTNDS} />
+							<Route path={`/bao-hiem-oto-vat-chat`} component={OtoVatChat} />
 							<Route path={`/tin-tuc`} component={Home} />
 							<Route path={`/gioi-thieu`} component={Home} />
 							<Route path={`/bao-hiem-tai-nan`} component={Docs} />

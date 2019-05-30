@@ -285,12 +285,12 @@ class Docs extends Component {
                         <h4 style={h4Style}>QUY TRÌNH THAM GIA ĐƠN GIẢN, NHANH CHÓNG</h4>
                       </div>
                       <div>
-                        <h5>Quý khách có thể gọi hoặc kết bạn Zalo qua SĐT:<span className="text-danger font-weight-bold"> 0962480094</span> hoặc gửi thông tin về email: <span className="text-danger font-italic">phamanhquan0203@gmail.com</span> để được tư vấn miễn phí.</h5>
+                        <h5 className="text-dark">Quý khách có thể gọi hoặc kết bạn Zalo qua SĐT:<span className="text-danger font-weight-bold"> 0962480094</span> hoặc gửi thông tin về email: <span className="text-danger font-italic">phamanhquan0203@gmail.com</span> để được tư vấn miễn phí.</h5>
                       </div>
                     </Colxx>
                     <Colxx xxs="12">
                       <div>
-                        <h5>Hoặc Quý khách yêu cầu chúng tôi gọi lại<NavLink to="/lien-he"> tại đây.</NavLink></h5>
+                        <h5 className="text-dark">Hoặc Quý khách yêu cầu chúng tôi gọi lại<NavLink to="/lien-he"> tại đây.</NavLink></h5>
                       </div>
                     </Colxx>
                     <Colxx></Colxx>
@@ -301,7 +301,7 @@ class Docs extends Component {
                     </Colxx>
                     <Colxx xxs="12">
                       <div>
-                        <h4>Sau khi hoàn tất thông tin, quý khách sẽ nhận giấy chứng nhận bảo hiểm trong vòng <span className="text-danger">1h</span> đồng hồ bằng đường chuyển phát nhanh của các dịch vụ giao hành tận tay. Phí dịch vụ được tính dựa trên khoảng cách giữa Bảo hiểm PVI Sài Gòn với vị trí quý khách cần nhận.</h4>
+                        <h4 className="text-dark">Sau khi hoàn tất thông tin, quý khách sẽ nhận giấy chứng nhận bảo hiểm trong vòng <span className="text-danger">1h</span> đồng hồ bằng đường chuyển phát nhanh của các dịch vụ giao hành tận tay. Phí dịch vụ được tính dựa trên khoảng cách giữa Bảo hiểm PVI Sài Gòn với vị trí quý khách cần nhận.</h4>
                       </div>
                     </Colxx>
                   </Row>
@@ -312,10 +312,10 @@ class Docs extends Component {
                         <h3>Vậy khi có sự cố tai nạn xảy ra, bạn nên quan tâm đến những thông tin sau đây:</h3>
                       </div>
                       <div>
-                        <h5>– Khi có sự cố tai nạn xảy ra gọi ngay vào<span className="text-danger font-weight-bold"> 0962480094</span> để được hỗ trợ hoặc thông báo bằng văn bản đến PVI trong vòng 30 ngày kể từ ngày xảy ra sự cố tai nạn.</h5>
+                        <h5 className="text-dark">– Khi có sự cố tai nạn xảy ra gọi ngay vào<span className="text-danger font-weight-bold"> 0962480094</span> để được hỗ trợ hoặc thông báo bằng văn bản đến PVI trong vòng 30 ngày kể từ ngày xảy ra sự cố tai nạn.</h5>
                       </div>
                       <div>
-                        <h5>– Thời hạn yêu cầu trả tiền bảo hiểm tai nạn là<span className="text-danger"> 1 năm</span> kể từ ngày xảy ra sự kiện bảo hiểm.</h5>
+                        <h5 className="text-dark">– Thời hạn yêu cầu trả tiền bảo hiểm tai nạn là<span className="text-danger"> 1 năm</span> kể từ ngày xảy ra sự kiện bảo hiểm.</h5>
                       </div>
                     </Colxx>
                   </Row>
@@ -326,22 +326,22 @@ class Docs extends Component {
                         <h3>Hồ sơ yêu cầu trả tiền bảo hiểm tai nạn 24h gồm:</h3>
                       </div>
                       <div>
-                        <h5>– Giấy yêu cầu trả tiền bảo hiểm (theo mẫu của PVI tải <NavLink to="/lien-he"> tại đây</NavLink>)</h5>
+                        <h5 className="text-dark">– Giấy yêu cầu trả tiền bảo hiểm (theo mẫu của PVI tải <NavLink to="/lien-he"> tại đây</NavLink>)</h5>
                       </div>
                       <div>
-                        <h5>– Biên bản tai nạn có xác nhận của cơ quan nợi Người được bảo hiểm làm việc hoặc chính quyền địa phương hoặc cơ quan Công An nơi Người được bảo hiểm xảy ra tai nạn.</h5>
+                        <h5 className="text-dark">– Biên bản tai nạn có xác nhận của cơ quan nợi Người được bảo hiểm làm việc hoặc chính quyền địa phương hoặc cơ quan Công An nơi Người được bảo hiểm xảy ra tai nạn.</h5>
                       </div>
                       <div>
-                        <h5>– Bản gốc hóa đơn tài chính liên quan đến chi phí điều trị.</h5>
+                        <h5 className="text-dark">– Bản gốc hóa đơn tài chính liên quan đến chi phí điều trị.</h5>
                       </div>
                       <div>
-                        <h5>– Bản gốc hoặc bản sao hợp lệ các chứng từ y tế: Giấy ra viện, Phiếu điều trị (trong trường hợp điều trị nội trú), phiếu mổ hoặc thông tin về các phương pháp phẫu thuật (nếu phẫu thuật), sổ /phiếu khám bệnh, phiếu chỉ định và kết quả của các xét nghiệm, chẩn đoán hình ảnh, đơn thuốc (trường hợp điều trị ngoại trú).</h5>
+                        <h5 className="text-dark">– Bản gốc hoặc bản sao hợp lệ các chứng từ y tế: Giấy ra viện, Phiếu điều trị (trong trường hợp điều trị nội trú), phiếu mổ hoặc thông tin về các phương pháp phẫu thuật (nếu phẫu thuật), sổ /phiếu khám bệnh, phiếu chỉ định và kết quả của các xét nghiệm, chẩn đoán hình ảnh, đơn thuốc (trường hợp điều trị ngoại trú).</h5>
                       </div>
                       <div>
-                        <h5>– Bản gốc hoặc bản sao hợp lệ: Giấy chứng tử, Quyết định của tòa án có thẩm quyền về việc tuyên bố người được bảo hiểm bị mất tích do tai nạn (trường hợp mất tích) và văn bản xác nhận quyền thừa kế hợp pháp.</h5>
+                        <h5 className="text-dark">– Bản gốc hoặc bản sao hợp lệ: Giấy chứng tử, Quyết định của tòa án có thẩm quyền về việc tuyên bố người được bảo hiểm bị mất tích do tai nạn (trường hợp mất tích) và văn bản xác nhận quyền thừa kế hợp pháp.</h5>
                       </div>
                       <div>
-                        <h5>– Các giấy tờ khác liên quan đến việc trả tiền bảo hiểm theo quy đinh của Bảo hiểm PVI.</h5>
+                        <h5 className="text-dark">– Các giấy tờ khác liên quan đến việc trả tiền bảo hiểm theo quy đinh của Bảo hiểm PVI.</h5>
                       </div>
                       <div>
                         <h3>Địa chỉ gửi hồ sơ yêu cầu trả tiền bảo hiểm tai nạn 24h: Lầu 6, Tòa nhà Cental Park, 117 Nguyễn Du, P. Bến Thành, Q.1, Tp.HCM</h3>
@@ -355,7 +355,7 @@ class Docs extends Component {
                         <h3>Thời hạn chi trả bồi thường</h3>
                       </div>
                       <div >
-                        <h4>– Trong vòng <span className="text-danger font-weight-bold">15 ngày làm việc</span> kể từ ngày nhận đủ hồ sơ của Người được bảo hiểm.</h4>
+                        <h4 className="text-dark">– Trong vòng <span className="text-danger font-weight-bold">15 ngày làm việc</span> kể từ ngày nhận đủ hồ sơ của Người được bảo hiểm.</h4>
                       </div>
 
                     </Colxx>
@@ -363,17 +363,17 @@ class Docs extends Component {
 
                   <Row>
                     <Colxx xxs="12">
-                      <div >
+                      <div>
                         <h3>Quy định bắt buộc về bảo hiểm tai nạn đối với tất cả các công trình xây dựng theo thông tư 329/2016/TT-BTCngày 26/12/2016</h3>
                       </div>
-                      <div >
-                        <h4>Xem thông tư 329/2016/TT-BTC <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
+                      <div>
+                        <h4 className="text-dark">Xem thông tư 329/2016/TT-BTC <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
                       </div>
                       <div >
-                        <h4>Xem quy tắc bảo hiểm tai nạn 24h <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
+                        <h4 className="text-dark">Xem quy tắc bảo hiểm tai nạn 24h <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
                       </div>
                       <div >
-                        <h4>Xem bảng quy định chi trả theo tỷ lệ thương tật của Bộ tài chính <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
+                        <h4 className="text-dark">Xem bảng quy định chi trả theo tỷ lệ thương tật của Bộ tài chính <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
                       </div>
 
                     </Colxx>

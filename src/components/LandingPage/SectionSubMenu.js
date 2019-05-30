@@ -32,7 +32,7 @@ class SectionSubMenu extends Component {
                         </DropdownMenu>
                     </UncontrolledDropdown>
                 </NavItem>
-                <NavItem className={window.location.pathname === '/bao-hiem-oto-tnds' || window.location.pathname === '/bao-hiem-oto' ? 'active' : ''}>
+                <NavItem className={window.location.pathname === '/bao-hiem-oto-tnds' || window.location.pathname === '//bao-hiem-oto-vat-chat' ? 'active' : ''}>
                     <UncontrolledDropdown>
                         <DropdownToggle tag="a" caret color="empty" href="#">
                             <IntlMessages id="bh.menu.oto" />
@@ -41,7 +41,7 @@ class SectionSubMenu extends Component {
                             <NavLink to="/bao-hiem-oto-tnds" className="dropdown-item">
                                 <IntlMessages id="bh.menu.oto.tnds" />
                             </NavLink>
-                            <NavLink to="/videos" className="dropdown-item">
+                            <NavLink to="/bao-hiem-oto-vat-chat" className="dropdown-item">
                                 <IntlMessages id="bh.menu.oto.2chieu" />
                             </NavLink>
                         </DropdownMenu>
@@ -52,10 +52,20 @@ class SectionSubMenu extends Component {
                         <IntlMessages id="bh.menu.tainan" />
                     </NavLink>
                 </NavItem>
-                <NavItem className={window.location.pathname === '/bao-hiem-du-lich' ? 'active' : ''}>
-                    <NavLink to="/bao-hiem-du-lich">
-                        <IntlMessages id="bh.menu.dulich" />
-                    </NavLink>
+                <NavItem className={window.location.pathname === '/bao-hiem-du-lich-tn' ? 'active' : ''}>
+                    <UncontrolledDropdown>
+                        <DropdownToggle tag="a" caret color="empty" href="#">
+                            <IntlMessages id="bh.menu.dulich" />
+                        </DropdownToggle>
+                        <DropdownMenu>
+                            <NavLink to="/bao-hiem-du-lich-tn">
+                                <IntlMessages id="bh.menu.dulich" />
+                            </NavLink>
+                            <NavLink to="/bao-hiem-du-lich-tn">
+                                <IntlMessages id="bh.menu.dulich" />
+                            </NavLink>
+                        </DropdownMenu>
+                    </UncontrolledDropdown>
                 </NavItem>
                 <NavItem className={window.location.pathname === '/lien-he' ? 'active' : ''}>
                     <NavLink to="/lien-he">

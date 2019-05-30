@@ -33,8 +33,12 @@ const th2Style = {
   width: '325px'
 };
 
+const imgStyle = {
+  paddingTop: '150px'
+};
 
-class OtoTNDS extends Component {
+
+class OtoVatChat extends Component {
   constructor(props) {
     super(props);
     this.onMenuClick = this.onMenuClick.bind(this);
@@ -81,8 +85,10 @@ class OtoTNDS extends Component {
             <div className="content-container" ref={(x) => { this.home = x; }}>
               <div className="section home subpage">
                 <Container>
-                  <SubHero title={messages["lp.meaning-logo.title"]} />
                   <Row>
+                    <Colxx>
+                      <img style={imgStyle} src="/assets/img/sua_oto.png" />
+                    </Colxx>
                     <NavLink className="btn btn-circle btn-outline-semi-light hero-circle-button" to="#" onClick={(event) => this.onMenuClick("content", event)}>
                       <i className="simple-icon-arrow-down"></i>
                     </NavLink>
@@ -96,16 +102,25 @@ class OtoTNDS extends Component {
                     <Row className="mt-5">
                       <Colxx xxs="12">
                         <div>
-                          <h3><span className="font-weight-bold">Đối tượng bảo hiểm:</span> Chủ xe ô-tô tham gia giao thông trên lãnh thổ nước Việt Nam</h3>
+                          <h3><span className="font-weight-bold">Đối tượng bảo hiểm:</span> Xe ô-tô hoạt động trong lãnh thổ Việt Nam, bao gồm: thân, khung, vỏ, máy móc và các trang thiết bị khác trên xe.</h3>
                         </div>
                         <div>
-                          <h3><span className="font-weight-bold">Quyền lợi BH:</span> Chủ xe ô-tô được bồi hoàn số tiền phải trả cho người bị thiệt hại gồm:</h3>
+                          <h3><span className="font-weight-bold">Quyền lợi BH:</span> Chủ xe/ Người được bảo hiểm được bồi hoàn những thiệt hại vật chất do thiên tai, tai nạn bất ngờ, không lường trước được…trong những trường hợp sau:</h3>
                         </div>
                         <div>
-                          <h4 className="text-dark font-weight-bold">- Thiệt hại về thân thể, tính mạng và tài sản đối với bên thứ ba do xe ô-tô gây ra</h4>
+                          <h4 className="text-dark font-weight-bold">- Đâm, va (bao gồm cả va chạm với vật thể khác ngoài xe cơ giới), lật, đổ, chìm, rơi toàn bộ xe, bị các vật thể khác rơi vào.</h4>
                         </div>
                         <div>
-                          <h4 className="text-dark font-weight-bold">- Thiệt hại về thân thể và tính mạng của hành khách theo hợp đồng vận chuyển hành khách do xe ô-tô gây ra.</h4>
+                          <h4 className="text-dark font-weight-bold">- Hỏa hoạn, cháy, nổ.</h4>
+                        </div>
+                        <div>
+                          <h4 className="text-dark font-weight-bold">- Những tai họa bất khả kháng do thiên nhiên (Bao gồm nhưng không giới hạn bão, lũ, lụt, sét đánh, giông tố, động đất, sụt lở, sóng thần....).</h4>
+                        </div>
+                        <div>
+                          <h4 className="text-dark font-weight-bold">- Mất toàn bộ xe do trộm, cướp.</h4>
+                        </div>
+                        <div>
+                          <h4 className="text-dark font-weight-bold">- Hành vi ác ý, cố tình phá hoại (loại trừ hành vi ác ý, cố tình phá hoại của Chủ xe/ Đại diện hợp pháp của Chủ xe/ Người được bảo hiểm / Lái xe / Người được giao sử dụng chiếc xe đó).</h4>
                         </div>
                       </Colxx>
                       <Colxx xxs="12">
@@ -401,4 +416,4 @@ class OtoTNDS extends Component {
     );
   }
 }
-export default connect(mapStateToProps, { landingPageMobileMenuToggle, landingPageMobileMenuClose })(injectIntl(OtoTNDS))
+export default connect(mapStateToProps, { landingPageMobileMenuToggle, landingPageMobileMenuClose })(injectIntl(OtoVatChat))
