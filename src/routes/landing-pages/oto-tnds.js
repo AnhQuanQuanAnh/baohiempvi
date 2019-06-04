@@ -110,7 +110,7 @@ class OtoTNDS extends Component {
                       </Colxx>
                       <Colxx xxs="12">
                         <div>
-                          <h3><span className="font-weight-bold">Liên hệ Hotline để được tư vấn miễn phí:</span> <span className="text-danger font-weight-bold"> 0962480094</span><span> hoặc qua email</span> <span className="text-danger font-weight-bold"> phamanhquan0203@gmail.com</span></h3>
+                          <h3><span className="font-weight-bold">Liên hệ Hotline để được tư vấn miễn phí:</span> <span className="text-danger font-weight-bold"> 0962480094</span><span> hoặc qua email</span> <span className="text-danger font-weight-bold"> baohiemtructuyen247pvi@gmail.com</span></h3>
                         </div>
                       </Colxx>
                     </Row>

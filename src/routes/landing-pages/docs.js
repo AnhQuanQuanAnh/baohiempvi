@@ -87,9 +87,10 @@ class Docs extends Component {
             <div className="content-container" ref={(x) => { this.home = x; }}>
               <div className="section home subpage">
                 <Container>
-                  <SubHero title={messages["bh.tainan.title"]}>
-                  </SubHero>
                   <Row>
+                    <Colxx>
+                      <img className="imgHeader" src="/assets/img/tainan.jpg" />
+                    </Colxx>
                     <NavLink className="btn btn-circle btn-outline-semi-light hero-circle-button" to="#" onClick={(event) => this.onMenuClick("content", event)}>
                       <i className="simple-icon-arrow-down"></i>
                     </NavLink>
@@ -285,7 +286,7 @@ class Docs extends Component {
                         <h4 style={h4Style}>QUY TRÌNH THAM GIA ĐƠN GIẢN, NHANH CHÓNG</h4>
                       </div>
                       <div>
-                        <h5 className="text-dark">Quý khách có thể gọi hoặc kết bạn Zalo qua SĐT:<span className="text-danger font-weight-bold"> 0962480094</span> hoặc gửi thông tin về email: <span className="text-danger font-italic">phamanhquan0203@gmail.com</span> để được tư vấn miễn phí.</h5>
+                        <h5 className="text-dark">Quý khách có thể gọi hoặc kết bạn Zalo qua SĐT:<span className="text-danger font-weight-bold"> 0962480094</span> hoặc gửi thông tin về email: <span className="text-danger font-italic">baohiemtructuyen247pvi@gmail.com</span> để được tư vấn miễn phí.</h5>
                       </div>
                     </Colxx>
                     <Colxx xxs="12">

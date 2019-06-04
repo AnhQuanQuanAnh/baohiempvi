@@ -137,7 +137,7 @@ class Contact extends Component {
                       <p className="mb-5">+84 902379864</p>
 
                       <p className="text-primary mb-2">E-mail</p>
-                      <p className="mb-0">baohiem@pvi.com</p>
+                      <p className="mb-0">baohiemtructuyen247pvi@gmail.com</p>
 
                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.494484958826!2d106.69221061526042!3d10.773388362194623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f251d1b5541%3A0xfa5170cfafdddeb7!2zQ8OUTkcgVFkgQuG6ok8gSEnhu4JNIFBWSSBTw4BJIEfDkk4!5e0!3m2!1svi!2s!4v1558665512387!5m2!1svi!2s" styl={mapStyle} allowFullScreen></iframe>
                     </Colxx>

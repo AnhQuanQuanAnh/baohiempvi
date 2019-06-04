@@ -8,7 +8,6 @@ import { MenuMultipage, MenuMultipageMobile } from "Components/LandingPage/Secti
 import Headroom from 'react-headroom';
 import scrollToComponent from 'react-scroll-to-component';
 import { NavLink } from "react-router-dom";
-import SubHero from "Components/LandingPage/SectionHeroSub";
 import Footer from "Components/LandingPage/SectionFooter";
 import SectionProducts from "Components/LandingPage/SectionProducts";
 import { Colxx } from "Components/CustomBootstrap";
@@ -31,10 +30,6 @@ const th1Style = {
 
 const th2Style = {
   width: '325px'
-};
-
-const imgStyle = {
-  paddingTop: '150px'
 };
 
 
@@ -87,7 +82,7 @@ class OtoVatChat extends Component {
                 <Container>
                   <Row>
                     <Colxx>
-                      <img style={imgStyle} src="/assets/img/sua_oto.png" />
+                      <img className="imgHeader" src="/assets/img/sua_oto.png" />
                     </Colxx>
                     <NavLink className="btn btn-circle btn-outline-semi-light hero-circle-button" to="#" onClick={(event) => this.onMenuClick("content", event)}>
                       <i className="simple-icon-arrow-down"></i>
@@ -125,7 +120,7 @@ class OtoVatChat extends Component {
                       </Colxx>
                       <Colxx xxs="12">
                         <div>
-                          <h3><span className="font-weight-bold">Liên hệ Hotline để được tư vấn miễn phí:</span> <span className="text-danger font-weight-bold"> 0962480094</span><span> hoặc qua email</span> <span className="text-danger font-weight-bold"> phamanhquan0203@gmail.com</span></h3>
+                          <h3><span className="font-weight-bold">Liên hệ Hotline để được tư vấn miễn phí:</span> <span className="text-danger font-weight-bold"> 0962480094</span><span> hoặc qua email</span> <span className="text-danger font-weight-bold"> baohiemtructuyen247pvi@gmail.com</span></h3>
                         </div>
                       </Colxx>
                     </Row>
