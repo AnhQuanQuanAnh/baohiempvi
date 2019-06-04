@@ -81,8 +81,10 @@ class OtoTNDS extends Component {
             <div className="content-container" ref={(x) => { this.home = x; }}>
               <div className="section home subpage">
                 <Container>
-                  <SubHero title={messages["lp.meaning-logo.title"]} />
                   <Row>
+                    <Colxx>
+                      <img className="imgHeader" src="/assets/img/oto.png" />
+                    </Colxx>
                     <NavLink className="btn btn-circle btn-outline-semi-light hero-circle-button" to="#" onClick={(event) => this.onMenuClick("content", event)}>
                       <i className="simple-icon-arrow-down"></i>
                     </NavLink>

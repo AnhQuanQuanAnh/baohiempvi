@@ -32,7 +32,7 @@ class SectionSubMenu extends Component {
                         </DropdownMenu>
                     </UncontrolledDropdown>
                 </NavItem>
-                <NavItem className={window.location.pathname === '/bao-hiem-oto-tnds' || window.location.pathname === '//bao-hiem-oto-vat-chat' ? 'active' : ''}>
+                <NavItem className={window.location.pathname === '/bao-hiem-oto-tnds' || window.location.pathname === '/bao-hiem-oto-vat-chat' ? 'active' : ''}>
                     <UncontrolledDropdown>
                         <DropdownToggle tag="a" caret color="empty" href="#">
                             <IntlMessages id="bh.menu.oto" />
