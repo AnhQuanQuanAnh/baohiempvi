@@ -88,7 +88,7 @@ class PVICareEnterprise extends Component {
                 <Container>
                   <Row>
                     <Colxx>
-                      <img className="imgHeader" src="/assets/img/tainan.jpg" />
+                      <img className="imgHeader" src="/assets/img/staff_2.jpg" />
                     </Colxx>
                     <NavLink className="btn btn-circle btn-outline-semi-light hero-circle-button" to="#" onClick={(event) => this.onMenuClick("content", event)}>
                       <i className="simple-icon-arrow-down"></i>
@@ -103,16 +103,29 @@ class PVICareEnterprise extends Component {
                   <Row className="mt-5">
                     <Colxx xxs="12">
                       <div>
-                        <h4><span style={spanStyle}>PHÍ BẢO HIỂM TỪ</span><span style={spanPriceStyle}> 67.500</span> <span style={spanStyle}>ĐẾN</span><span style={spanPriceStyle}> 900.000 VNĐ</span></h4>
+                        <h2>Bảo Hiểm Sức Khỏe Nhân Viên PVI (Chỉ Dành Cho Doanh Nghiệp – PVI Care)</h2>
                       </div>
-                      <div>
-                        <h4><span style={spanStyle}>PHÍ BẢO HIỂM CHO GÓI</span><span style={spanPriceStyle}> 100 TRIỆU</span><span style={spanStyle}> LÀ</span><span style={spanPriceStyle}> 225.000 VNĐ</span></h4>
-                      </div>
+                      <h3>Sự khác biệt cảm nhận từ dịch vụ: không cần phải kiểm tra sức khỏe trước khi tham gia bảo hiểm, sử dụng hệ thống bảo lãnh viện phí. Bảo hiểm sức khỏe pvi care chi trả chi phí y tế tại tất cả các bệnh viện trên toàn quốc. Bảo lãnh viện phí cả nội trú, ngoại trú và răng. Không cần kiểm tra sức khỏe khi tham gia.</h3>
                     </Colxx>
-
                     <Colxx xxs="12">
-                    </Colxx>
-
+                      <div>
+                        <h3 className="text-danger">Đối tượng được bảo hiểm</h3>
+                        <h3 className="font-weight-bold">Tất cả nhân viên và người thân khai báo với nhà bảo hiểm vào ngày hiệu lực hợp đồng.</h3>
+                        <h3 className="font-weight-bold">Người trưởng thành: Từ đủ 18 đến 65 tuổi.</h3>
+                        <h3 className="font-weight-bold">Trẻ em: từ 15 ngày tuổi đến 18 tuổi hoặc đến 24 tuổi nếu vẫn chưa đi làm và còn đang tham gia học toàn thời gian tại trường.</h3>
+                        <h3 className="font-weight-bold">– Không bị các bệnh lý về thần kinh, phong, ung thư.</h3>
+                        <h3 className="font-weight-bold">- Không bị thương tật vĩnh viễn từ 50% trở lên tại thời điểm đầu hợp đồng.</h3>
+                        <h3 className="font-weight-bold">– Không trong thời gian điều trị bệnh, thương tật.</h3>
+                      </div>
+                      </Colxx>
+                      <Colxx xxs="12">
+                        <div>
+                          <h3 className="text-danger">Thời hạn bảo hiểm</h3>
+                          <h3 className="font-weight-bold">12 tháng</h3>
+                        </div>
+                      </Colxx>
+                  </Row>
+                  <Row className="mt-5">
                     <Colxx xxs="12">
                       <div>
                         <h3>GIẢM 45% PHÍ CHO SỐ LƯỢNG TRÊN 20 NGƯỜI</h3>

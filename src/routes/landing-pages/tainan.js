@@ -131,12 +131,12 @@ class TaiNan extends Component {
                         <div className="d-flex flex-grow-1 min-width-zero">
                           <Table className="text-center" bordered hover>
                             <thead>
-                              <tr>
-                                <th className="text-success font-weight-bold">MỨC BỒI THƯỜNG<br />
+                              <tr className="text-success font-weight-bold">
+                                <th>MỨC BỒI THƯỜNG<br />
                                   (VNĐ/Người/Năm)</th>
-                                <th className="text-success font-weight-bold">MUA TỪ 5 ĐẾN 20 NGƯỜI<br />
+                                <th>MUA TỪ 5 ĐẾN 20 NGƯỜI<br />
                                   GIẢM 20%</th>
-                                <th className="text-success font-weight-bold">MUA TRÊN 20 NGƯỜI<br />
+                                <th>MUA TRÊN 20 NGƯỜI<br />
                                   GIẢM 45%</th>
                               </tr>
                             </thead>
