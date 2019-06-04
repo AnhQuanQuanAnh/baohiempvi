@@ -55,7 +55,7 @@ class SectionProducts extends Component {
                         </div>
 
                         <div className="pr-3 pl-3 d-flex">
-                            <NavLink to="/bao-hiem-o-to">
+                            <NavLink to="/bao-hiem-suc-khoe-doanh-nghiep">
                                 <Card>
                                     <CardBody className="text-center pt-5 pb-5">
                                         <div>

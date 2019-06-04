@@ -72,22 +72,22 @@ export class MenuMultipageMobile extends React.Component {
               <IntlMessages id="bh.menu.trangchu" />
             </NavLink>
           </NavItem>
-          <NavItem className={window.location.pathname === '/y-nghia-logo' ? 'active' : ''}>
+          <NavItem className={window.location.pathname === '/bao-hiem-suc-khoe-doanh-nghiep' || window.location.pathname === '/bao-hiem-suc-khoe-ca-nhan' ? 'active' : ''}>
             <UncontrolledDropdown>
               <DropdownToggle tag="a" caret color="empty" href="#">
                 <IntlMessages id="bh.menu.pvicare" />
               </DropdownToggle>
               <DropdownMenu>
-                <NavLink to="/docs" className="dropdown-item">
+                <NavLink to="/bao-hiem-suc-khoe-doanh-nghiep" className="dropdown-item">
                   <IntlMessages id="bh.menu.pvicare.comapy" />
                 </NavLink>
-                <NavLink to="/videos" className="dropdown-item">
+                <NavLink to="/bao-hiem-suc-khoe-ca-nhan" className="dropdown-item">
                   <IntlMessages id="bh.menu.pvicare.family" />
                 </NavLink>
               </DropdownMenu>
             </UncontrolledDropdown>
           </NavItem>
-          <NavItem className={window.location.pathname === '/bao-hiem-oto-tnds' || window.location.pathname === '/bao-hiem-oto' ? 'active' : ''}>
+          <NavItem className={window.location.pathname === '/bao-hiem-oto-tnds' || window.location.pathname === '/bao-hiem-oto-vat-chat' ? 'active' : ''}>
             <UncontrolledDropdown>
               <DropdownToggle tag="a" caret color="empty" href="#">
                 <IntlMessages id="bh.menu.oto" />
@@ -96,7 +96,7 @@ export class MenuMultipageMobile extends React.Component {
                 <NavLink to="/bao-hiem-oto-tnds" className="dropdown-item">
                   <IntlMessages id="bh.menu.oto.tnds" />
                 </NavLink>
-                <NavLink to="/videos" className="dropdown-item">
+                <NavLink to="/bao-hiem-oto-vat-chat" className="dropdown-item">
                   <IntlMessages id="bh.menu.oto.2chieu" />
                 </NavLink>
               </DropdownMenu>

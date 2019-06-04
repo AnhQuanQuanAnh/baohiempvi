@@ -29,7 +29,7 @@ const h2Style = {
   color: "ORANGERED"
 }
 
-class Blog extends Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this.onMenuClick = this.onMenuClick.bind(this);
@@ -133,14 +133,14 @@ class Blog extends Component {
                     <Colxx xxs="12" lg="6" className="mb-4">
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
-                          <NavLink to="/bao-hiem-suc-khoe">
+                          <NavLink to="/bao-hiem-suc-khoe-doanh-nghiep">
                             <img className="card-img-left" src="/assets/img/staff.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
 
                         <div className="w-60 d-flex align-items-center">
                           <CardBody>
-                            <NavLink to="/blog-detail">
+                            <NavLink to="/bao-hiem-suc-khoe-doanh-nghiep">
                               <h3 className="mb-4 listing-heading">
                                 <ResponsiveEllipsis
                                   text={messages["bh.product.health.company"]}
@@ -159,7 +159,7 @@ class Blog extends Component {
                                 basedOn='letters' />
                             </div>
                             <footer>
-                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-oto-tnds">Chi tiết</NavLink></p>
+                              <p className="text-muted text-small mb-0 font-weight-light"><NavLink to="/bao-hiem-suc-khoe-doanh-nghiep">Chi tiết</NavLink></p>
                             </footer>
                           </CardBody>
                         </div>
@@ -205,14 +205,14 @@ class Blog extends Component {
                     <Colxx xxs="12" lg="6" className="mb-4">
                       <Card className="flex-row mb-5 listing-card-container">
                         <div className="w-40 position-relative">
-                          <NavLink to="/blog-detail">
+                          <NavLink to="/bao-hiem-suc-khoe-ca-nhan">
                             <img className="card-img-left" src="/assets/img/family.jpg" alt="Card cap" />
                           </NavLink>
                         </div>
 
                         <div className="w-60 d-flex align-items-center">
                           <CardBody>
-                            <NavLink to="/blog-detail">
+                            <NavLink to="/bao-hiem-suc-khoe-ca-nhan">
                               <h3 className="mb-4 listing-heading ellipsis">
                                 <ResponsiveEllipsis
                                   text={messages["bh.product.health.family"]}
@@ -367,4 +367,4 @@ class Blog extends Component {
     );
   }
 }
-export default connect(mapStateToProps, { landingPageMobileMenuToggle, landingPageMobileMenuClose })(injectIntl(Blog))
+export default connect(mapStateToProps, { landingPageMobileMenuToggle, landingPageMobileMenuClose })(injectIntl(Home))

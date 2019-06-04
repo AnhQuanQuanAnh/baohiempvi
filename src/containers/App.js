@@ -20,19 +20,15 @@ import MultipageHome from "Routes/landing-pages/multipage-home";
 import About from "Routes/landing-pages/about";
 import AuthLogin from "Routes/landing-pages/auth-login";
 import AuthRegister from "Routes/landing-pages/auth-register";
-import Home from "Routes/landing-pages/blog";
-import BlogDetail from "Routes/landing-pages/blog-detail";
-import Careers from "Routes/landing-pages/careers";
-import Confirmation from "Routes/landing-pages/confirmation";
+import Home from "Routes/landing-pages/home";
 import Contact from "Routes/landing-pages/contact";
 import Content from "Routes/landing-pages/content";
 import TaiNan from "Routes/landing-pages/tainan";
+import PVICareEnterprise from "Routes/landing-pages/pvi-care-enterprise";
+import PVICarePersonal from "Routes/landing-pages/pvi-care-personal";
 import OtoTNDS from "Routes/landing-pages/oto-tnds";
 import OtoVatChat from "Routes/landing-pages/oto-vatchat";
-import Prices from "Routes/landing-pages/prices";
 import Videos from "Routes/landing-pages/videos";
-import VideoDetail from "Routes/landing-pages/video-detail";
-import DocsDetails from "Routes/landing-pages/docs-details";
 
 
 import 'Assets/css/vendor/bootstrap.min.css'
@@ -80,8 +76,6 @@ class App extends Component {
         					<Route path={`/auth-login`} component={AuthLogin} />
         					<Route path={`/auth-register`} component={AuthRegister} />
         					<Route path={`/home`} component={Home} />
-        					<Route path={`/careers`} component={Careers} />
-        					<Route path={`/confirmation`} component={Confirmation} />
         					<Route path={`/lien-he`} component={Contact} />
         					<Route path={`/content`} component={Content} />
 							<Route path={`/bao-hiem-oto-tnds`} component={OtoTNDS} />
@@ -90,12 +84,8 @@ class App extends Component {
 							<Route path={`/gioi-thieu`} component={Home} />
 							<Route path={`/bao-hiem-tai-nan`} component={TaiNan} />
 							<Route path={`/bao-hiem-du-lich`} component={TaiNan} />
-							<Route path={`/bao-hiem-suc-khoe-doanh-nghiep`} component={TaiNan} />
-							<Route path={`/bao-hiem-suc-khoe-ca-nhan`} component={Videos} />
-        					<Route path={`/prices`} component={Prices} />
-        					<Route path={`/videos`} component={Videos} />
-        					<Route path={`/video-detail`} component={VideoDetail} />
-        					<Route path={`/docs-details`} component={DocsDetails} />
+							<Route path={`/bao-hiem-suc-khoe-doanh-nghiep`} component={PVICareEnterprise} />
+							<Route path={`/bao-hiem-suc-khoe-ca-nhan`} component={PVICarePersonal} />
 
 							<Route path={`/login`} component={login} />
 							<Route path={`/register`} component={register} />

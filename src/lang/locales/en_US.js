@@ -173,28 +173,6 @@ module.exports = {
   "input-groups.choose": "Choose...",
   "input-groups.custom-file-input": "Custom File Input",
 
-  /* 07.14.Jumbotron */
-  "jumbotron.hello-world": "Hello, world!",
-  "jumbotron.lead":
-    "This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
-  "jumbotron.lead-detail":
-    "It uses utility classes for typography and spacing to space content out within the larger container.",
-  "jumbotron.learn-more": "Learn more",
-
-  /* 07.15.Modal */
-  "modal.basic": "Basic",
-  "modal.modal-title": "Modal title",
-  "modal.launch-demo-modal": "Launch Demo Modal",
-  "modal.scrolling-long-content": "Scrolling Long Content",
-  "modal.backdrop": "Backdrop",
-  "modal.backdrop-value": "Backdrop value",
-  "modal.right-modal": "Right Modal",
-  "modal.launch-right-modal": "Launch Right Modal",
-  "modal.nested-modal": "Nested Modal",
-  "modal.size": "Size",
-  "modal.launch-large-modal": "Launch Large Modal",
-  "modal.launch-small-modal": "Launch Small Modal",
-
   "bh.menu.trangchu": "TRANG CHỦ",
   "bh.menu.pvicare": "BẢO HIỂM SỨC KHỎE",
   "bh.menu.pvicare.comapy": "Bảo Hiểm PVI Care Doanh Nghiệp",
@@ -209,29 +187,12 @@ module.exports = {
   "bh.email.placeholder": "Địa chỉ E-mail",
   "bh.button.regist": "Đăng kí",
 
-  "bh.tainan.title": "Bảo Hiểm Tai Nạn 24h PVI",
-
   "lp.hero.line-1": "MAGIC IS IN",
   "lp.hero.line-2": "THE DETAILS",
   "lp.hero.detail-line-1": "Gogo is a combination of good design, quality code and attention for details.",
   "lp.hero.detail-line-2": "We used same design language for components, layouts, apps and other parts of the theme.",
   "lp.hero.detail-line-3": "Hope you enjoy it!",
   "lp.hero.register": "REGISTER NOW",
-
-  "lp.featuressection.title": "Features At a Glance",
-  "lp.featuressection.detail": "We tried to create an admin theme that we would like to use ourselves so we listed our priorities. We would like to have a theme that is not over complicated to use, does the job well, contains must have components and looks really nice.",
-  "lp.featuressection.title-1": "Pleasant Design",
-  "lp.featuressection.detail-1-1": "As a web developer we enjoy to work on something looks nice. It is not an absolute necessity but it really motivates us that final product will look good for user point of view.",
-  "lp.featuressection.detail-1-2": "So we put a lot of work into colors, icons, composition and design harmony. Themed components and layouts with same design language.",
-  "lp.featuressection.detail-1-3": "We kept user experience principles always at the heart of the design process.",
-  "lp.featuressection.title-2": "Layouts for the Job",  
-  "lp.featuressection.detail-2-1": "Layouts are the real thing, they need to be accurate and right for the job. They should be functional for both user and developer.",  
-  "lp.featuressection.detail-2-2": "We created lots of different layouts for different jobs.",  
-  "lp.featuressection.detail-2-3": "Listing pages with view mode changing capabilities, shift select and select all functionality, application layouts with an additional menu, authentication and error layouts which has a different design than the other pages were our main focus. We also created details page with tabs that can hold many components.",  
-  "lp.featuressection.title-3": "Superfine Charts",
-  "lp.featuressection.detail-3-1": "Using charts is a good way to visualize data but they often look ugly and breaks the rhythm of design.",
-  "lp.featuressection.detail-3-2": "We concentrated on a single chart library and tried to create charts that looks good with color, opacity, border and shadow.",
-  "lp.featuressection.detail-3-3": "Used certain plugins and created some to make charts even more useful and beautiful.",
 
   "bh.reviews.title": "Đánh giá của khách hàng",
   "bh.reviews.review-name-1": "Nguyễn Ngọc Anh",

@@ -17,16 +17,16 @@ class SectionSubMenu extends Component {
                         <IntlMessages id="bh.menu.trangchu" />
                     </NavLink>
                 </NavItem>
-                <NavItem className={window.location.pathname === '/y-nghia-logo' ? 'active' : ''}>
+                <NavItem className={window.location.pathname === '/bao-hiem-suc-khoe-doanh-nghiep' || window.location.pathname === '/bao-hiem-suc-khoe-ca-nhan' ? 'active' : ''}>
                     <UncontrolledDropdown>
                         <DropdownToggle tag="a" caret color="empty" href="#">
                             <IntlMessages id="bh.menu.pvicare" />
                         </DropdownToggle>
                         <DropdownMenu>
-                            <NavLink to="/docs" className="dropdown-item">
+                            <NavLink to="/bao-hiem-suc-khoe-doanh-nghiep" className="dropdown-item">
                                 <IntlMessages id="bh.menu.pvicare.comapy" />
                             </NavLink>
-                            <NavLink to="/videos" className="dropdown-item">
+                            <NavLink to="/bao-hiem-suc-khoe-ca-nhan" className="dropdown-item">
                                 <IntlMessages id="bh.menu.pvicare.family" />
                             </NavLink>
                         </DropdownMenu>
