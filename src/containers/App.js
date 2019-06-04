@@ -26,7 +26,7 @@ import Careers from "Routes/landing-pages/careers";
 import Confirmation from "Routes/landing-pages/confirmation";
 import Contact from "Routes/landing-pages/contact";
 import Content from "Routes/landing-pages/content";
-import Docs from "Routes/landing-pages/docs";
+import TaiNan from "Routes/landing-pages/tainan";
 import OtoTNDS from "Routes/landing-pages/oto-tnds";
 import OtoVatChat from "Routes/landing-pages/oto-vatchat";
 import Prices from "Routes/landing-pages/prices";
@@ -84,14 +84,13 @@ class App extends Component {
         					<Route path={`/confirmation`} component={Confirmation} />
         					<Route path={`/lien-he`} component={Contact} />
         					<Route path={`/content`} component={Content} />
-        					<Route path={`/docs`} component={Docs} />
 							<Route path={`/bao-hiem-oto-tnds`} component={OtoTNDS} />
 							<Route path={`/bao-hiem-oto-vat-chat`} component={OtoVatChat} />
 							<Route path={`/tin-tuc`} component={Home} />
 							<Route path={`/gioi-thieu`} component={Home} />
-							<Route path={`/bao-hiem-tai-nan`} component={Docs} />
-							<Route path={`/bao-hiem-du-lich`} component={Docs} />
-							<Route path={`/bao-hiem-suc-khoe-doanh-nghiep`} component={Docs} />
+							<Route path={`/bao-hiem-tai-nan`} component={TaiNan} />
+							<Route path={`/bao-hiem-du-lich`} component={TaiNan} />
+							<Route path={`/bao-hiem-suc-khoe-doanh-nghiep`} component={TaiNan} />
 							<Route path={`/bao-hiem-suc-khoe-ca-nhan`} component={Videos} />
         					<Route path={`/prices`} component={Prices} />
         					<Route path={`/videos`} component={Videos} />

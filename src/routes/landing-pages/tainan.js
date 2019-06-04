@@ -12,7 +12,6 @@ import { MenuMultipage, MenuMultipageMobile } from "Components/LandingPage/Secti
 import Headroom from 'react-headroom';
 import scrollToComponent from 'react-scroll-to-component';
 import { NavLink } from "react-router-dom";
-import SubHero from "Components/LandingPage/SectionHeroSub";
 import Footer from "Components/LandingPage/SectionFooter";
 import SectionProducts from "Components/LandingPage/SectionProducts";
 import { injectIntl } from 'react-intl';
@@ -41,7 +40,7 @@ const h4Style = {
   fontWeight: 'bold'
 }
 
-class Docs extends Component {
+class TaiNan extends Component {
   constructor(props) {
     super(props);
     this.onMenuClick = this.onMenuClick.bind(this);
@@ -400,4 +399,4 @@ class Docs extends Component {
   }
 }
 
-export default connect(mapStateToProps, { landingPageMobileMenuToggle, landingPageMobileMenuClose })(injectIntl(Docs))
+export default connect(mapStateToProps, { landingPageMobileMenuToggle, landingPageMobileMenuClose })(injectIntl(TaiNan))

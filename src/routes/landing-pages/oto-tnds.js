@@ -95,6 +95,16 @@ class OtoTNDS extends Component {
               <div className="section" ref={(x) => { this.content = x; }}>
                 <div>
                   <Container>
+                  <Row className="mt-5">
+                      <Colxx xxs="12">
+                        <div>
+                          <h2>Bảo hiểm bắt buộc trách nhiệm dân sự của chủ xe cơ giới</h2>
+                        </div>
+                        <div>
+                          <h3>- Theo quy định của Bộ tài chính cho các chủ xe khi lưu thông trên đường. Xe cơ giới là một nguồn nguy hiểm cao độ có thể gây ra tai nạn bất cứ lúc nào mà con người không thể lường trước được. Chính vì vậy việc xe cơ giới tham gia bảo hiểm trách nhiệm dân sự bắt buộc nhằm đảm bảo cho bên thứ 3 được chia sẽ và gánh vác rủi ro từ nhà bảo hiểm trong trường hợp các xe cơ giới gây tai nạn. Đây chính là ý nghĩa bắt buộc mà lực lượng cảnh sát giao thông yêu cầu kiểm tra đối với bảo hiểm xe.</h3>
+                        </div>
+                      </Colxx>
+                    </Row>
                     <Row className="mt-5">
                       <Colxx xxs="12">
                         <div>
