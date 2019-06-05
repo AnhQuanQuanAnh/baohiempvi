@@ -312,13 +312,6 @@ class TopNav extends Component {
                     <IntlMessages id="menu.chat" />
                   </NavLink>
                   <NavLink
-                    to="/app/applications/survey"
-                    className="icon-menu-item"
-                  >
-                    <i className="iconsmind-Formula d-block" />{" "}
-                    <IntlMessages id="menu.survey" />
-                  </NavLink>
-                  <NavLink
                     to="/app/applications/todo"
                     className="icon-menu-item"
                   >

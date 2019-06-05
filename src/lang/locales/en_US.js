@@ -215,7 +215,6 @@ module.exports = {
   "lp.screens.library": "Library",
   "lp.screens.todo": "Todo",
   "lp.screens.chat": "Chat",
-  "lp.screens.survey": "Survey",
 
   "lp.meaning-logo.title": "Biểu phí TNDS Bắt buộc các loại Ô tô",
  

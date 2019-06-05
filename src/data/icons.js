@@ -1812,7 +1812,6 @@ export const iconsmind = [
   "iconsmind-Shuffle-4",
   "iconsmind-Shuffle",
   "iconsmind-Shutter",
-  "iconsmind-Sidebar-Window",
   "iconsmind-Signal",
   "iconsmind-Singapore",
   "iconsmind-Skate-Shoes",

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route, withRouter, Switch, Redirect } from 'react-router-dom';
 
 import TopNav from 'Containers/TopNav'
-import Sidebar from 'Containers/Sidebar';
 
 import dashboards from './dashboards';
 import layouts from './layouts';
@@ -17,7 +16,6 @@ class MainApp extends Component {
 		return (
 			<div id="app-container" className={containerClassnames}>
 				<TopNav history={this.props.history} />
-				<Sidebar/>
 				<main>
 					<div className="container-fluid">
 						<Switch>
