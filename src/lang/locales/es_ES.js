@@ -96,7 +96,6 @@ module.exports = {
   "menu.visible": "Visible",
 
   "menu.landingpage": "Página de Destino",
-  "menu.multipage-home": "Múltiple Página",
   "menu.singlepage-home": "Una Página",
   "menu.about": "Acerca de",
   "menu.auth-login": "Autenticación",

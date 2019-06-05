@@ -16,7 +16,6 @@ import register from 'Routes/layouts/register'
 import error from 'Routes/layouts/error'
 import forgotPassword from 'Routes/layouts/forgot-password'
 
-import MultipageHome from "Routes/landing-pages/multipage-home";
 import About from "Routes/landing-pages/about";
 import AuthLogin from "Routes/landing-pages/auth-login";
 import AuthRegister from "Routes/landing-pages/auth-register";
@@ -28,7 +27,6 @@ import PVICareEnterprise from "Routes/landing-pages/pvi-care-enterprise";
 import PVICarePersonal from "Routes/landing-pages/pvi-care-personal";
 import OtoTNDS from "Routes/landing-pages/oto-tnds";
 import OtoVatChat from "Routes/landing-pages/oto-vatchat";
-import Videos from "Routes/landing-pages/videos";
 
 
 import 'Assets/css/vendor/bootstrap.min.css'
@@ -71,7 +69,6 @@ class App extends Component {
 							authUser={user}
 							component={MainRoute}
 						/>
-        					<Route path={`/multipage-home`} component={MultipageHome} />
         					<Route path={`/about`} component={About} />
         					<Route path={`/auth-login`} component={AuthLogin} />
         					<Route path={`/auth-register`} component={AuthRegister} />

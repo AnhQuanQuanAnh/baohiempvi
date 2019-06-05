@@ -498,12 +498,6 @@ class Sidebar extends Component {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/app/ui/charts">
-                    <i className="simple-icon-chart" />{" "}
-                    <IntlMessages id="menu.charts" />
-                  </NavLink>
-                </NavItem>
-                <NavItem>
                   <NavLink to="/app/ui/collapse">
                     <i className="simple-icon-arrow-up" />{" "}
                     <IntlMessages id="menu.collapse" />
@@ -582,9 +576,6 @@ class Sidebar extends Component {
                 })}
                 data-parent="landingpage"
               >
-                <NavItem>
-                  <a href="/multipage-home" target="_blank"><i className="simple-icon-docs" />{" "}<IntlMessages id="menu.multipage-home" /></a>
-                </NavItem>
                 <NavItem>
                   <a href="/singlepage-home" target="_blank"><i className="simple-icon-doc" />{" "}<IntlMessages id="menu.singlepage-home" /></a>
                 </NavItem>

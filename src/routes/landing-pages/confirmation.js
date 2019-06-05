@@ -83,15 +83,6 @@ class Confirmation extends Component {
                             <IntlMessages id="lp.confirmation.link" />.
                           </NavLink>
 
-                          <div className="mt-5">
-                            <NavLink
-                              to="/multipage-home"
-                              className="btn btn-outline-semi-light btn-xl"
-                            >
-                              <IntlMessages id="lp.confirmation.home" />
-                            </NavLink>
-                          </div>
-
                         </p>
 
                       </div>

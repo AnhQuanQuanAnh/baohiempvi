@@ -26,16 +26,10 @@ import CircularProgressbar from "react-circular-progressbar";
 import Select from "react-select";
 import CustomSelectInput from "Components/CustomSelectInput";
 
-import { LineShadow } from "Components/Charts";
 import commentsData from "Data/comments.json";
 import productsData from "Data/products.json";
 import cakeData from "Data/dashboard.cakes.json";
 
-
-import {
-  visitChartConfig,
-  conversionChartConfig,
-} from "Constants/chartConfig";
 
 const comments = commentsData.data;
 const dataTableData = productsData.data;
@@ -374,9 +368,6 @@ export default class ContentDashboard extends Component {
               </CardBody>
 
               
-              <div className="chart card-body pt-0">
-                <LineShadow {...visitChartConfig} />
-              </div>
             </Card>
           </Colxx>
           <Colxx sm="12" md="6" className="mb-4">
@@ -413,9 +404,6 @@ export default class ContentDashboard extends Component {
                   </UncontrolledDropdown>
                 </div>
               </CardBody>
-              <div className="chart card-body pt-0">
-                <LineShadow {...conversionChartConfig} />
-              </div>
             </Card>
           </Colxx>
         </Row>

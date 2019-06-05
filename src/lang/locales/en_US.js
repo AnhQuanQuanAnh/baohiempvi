@@ -1,37 +1,3 @@
-/* Gogo Language Texts
-
-Table of Contents
-
-01.General
-02.User Login, Logout, Register
-03.Menu
-04.Dashboards
-05.Layouts
-06.Applications
-  06.01.Chat
-  06.02.Survey
-  06.03.Todo
-07.UI
-  07.01.Alerts
-  07.02.Badges
-  07.03.Buttons
-  07.04.Cards
-  07.05.Carousel
-  07.06.Charts
-  07.07.Collapse
-  07.08.Dropdowns
-  07.09.Editors
-  07.10.Forms
-  07.11.Form Components
-  07.12.Icons
-  07.13.Input Groups
-  07.14.Jumbotron
-  07.15.Modal
-  07.16.Navigation
-  07.17.Popover & Tooltip
-  07.18.Sortable
-08.LandingPage
-*/
 
 module.exports = {
   /* 01.General */
