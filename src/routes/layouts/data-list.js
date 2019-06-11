@@ -31,7 +31,6 @@ import classnames from "classnames";
 
 import IntlMessages from "Util/IntlMessages";
 import { Colxx, Separator } from "Components/CustomBootstrap";
-import { BreadcrumbItems } from "Components/BreadcrumbContainer";
 import  firebase  from "firebase"
 import Pagination from "Components/List/Pagination";
 import mouseTrap from "react-mousetrap";
@@ -788,7 +787,6 @@ class DataListLayout extends Component {
                     </ButtonDropdown>
                   </div>
 
-                  <BreadcrumbItems match={this.props.match} />
                 </div>
 
                 <div className="mb-2">

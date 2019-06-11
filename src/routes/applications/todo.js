@@ -26,7 +26,6 @@ import Select from "react-select";
 import CustomSelectInput from "Components/CustomSelectInput";
 
 import { Colxx, Separator } from "Components/CustomBootstrap";
-import { BreadcrumbItems } from "Components/BreadcrumbContainer";
 import { NavLink } from "react-router-dom";
 import classnames from "classnames";
 import ApplicationMenu from "Components/ApplicationMenu";
@@ -359,7 +358,6 @@ class TodoApplication extends Component {
                   </DropdownMenu>
                 </ButtonDropdown>
               </div>
-              <BreadcrumbItems match={this.props.match} />
             </div>
 
             <div className="mb-2">

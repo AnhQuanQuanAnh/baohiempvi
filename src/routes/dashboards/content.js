@@ -15,7 +15,6 @@ import {
   Form,
   Input
 } from "reactstrap";
-import BreadcrumbContainer from "Components/BreadcrumbContainer";
 import { Colxx, Separator } from "Components/CustomBootstrap";
 import { NavLink } from "react-router-dom";
 import ReactSiemaCarousel from "Components/ReactSiema/ReactSiemaCarousel";
@@ -83,10 +82,6 @@ export default class ContentDashboard extends Component {
       <Fragment>
         <Row>
           <Colxx xxs="12">
-            <BreadcrumbContainer
-              heading={<IntlMessages id="menu.content" />}
-              match={this.props.match}
-            />
             <Separator className="mb-5" />
           </Colxx>
         </Row>
