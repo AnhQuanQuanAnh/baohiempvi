@@ -148,6 +148,8 @@ module.exports = {
   "bh.menu.oto.2chieu": "Bảo Hiểm Vật Chất Xe Ô Tô - Bảo Hiểm 2 Chiều",
   "bh.menu.tainan": "BẢO HIỂM TAI NẠN",
   "bh.menu.dulich": "BẢO HIỂM DU LỊCH",
+  "bh.menu.dulich.trong-nuoc": "Bảo Hiểm Du Lịch Trong Nước",
+  "bh.menu.dulich.nuoc-ngoai": "Bảo Hiểm Du Lịch Nước Ngoài",
   "bh.menu.lienhe": "LIÊN HỆ",
 
   "bh.email.placeholder": "Địa chỉ E-mail",

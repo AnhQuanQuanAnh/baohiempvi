@@ -52,17 +52,17 @@ class SectionSubMenu extends Component {
                         <IntlMessages id="bh.menu.tainan" />
                     </NavLink>
                 </NavItem>
-                <NavItem className={window.location.pathname === '/bao-hiem-du-lich-tn' ? 'active' : ''}>
+                <NavItem className={window.location.pathname === '/bao-hiem-du-lich-trong-nuoc' || window.location.pathname === '/bao-hiem-du-lich-nuoc-ngoai' ? 'active' : ''}>
                     <UncontrolledDropdown>
                         <DropdownToggle tag="a" caret color="empty" href="#">
                             <IntlMessages id="bh.menu.dulich" />
                         </DropdownToggle>
                         <DropdownMenu>
-                            <NavLink to="/bao-hiem-du-lich-tn">
-                                <IntlMessages id="bh.menu.dulich" />
+                            <NavLink to="/bao-hiem-du-lich-trong-nuoc" className="dropdown-item">
+                                <IntlMessages id="bh.menu.dulich.trong-nuoc" />
                             </NavLink>
-                            <NavLink to="/bao-hiem-du-lich-tn">
-                                <IntlMessages id="bh.menu.dulich" />
+                            <NavLink to="/bao-hiem-du-lich-nuoc-ngoai" className="dropdown-item">
+                                <IntlMessages id="bh.menu.dulich.nuoc-ngoai" />
                             </NavLink>
                         </DropdownMenu>
                     </UncontrolledDropdown>

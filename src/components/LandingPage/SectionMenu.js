@@ -107,10 +107,20 @@ export class MenuMultipageMobile extends React.Component {
               <IntlMessages id="bh.menu.tainan" />
             </NavLink>
           </NavItem>
-          <NavItem className={window.location.pathname === '/bao-hiem-du-lich' ? 'active' : ''}>
-            <NavLink to="/bao-hiem-du-lich">
-              <IntlMessages id="bh.menu.dulich" />
-            </NavLink>
+          <NavItem className={window.location.pathname === '/bao-hiem-du-lich-trong-nuoc' || window.location.pathname === '/bao-hiem-du-lich-nuoc-ngoai' ? 'active' : ''}>
+            <UncontrolledDropdown>
+              <DropdownToggle tag="a" caret color="empty" href="#">
+                <IntlMessages id="bh.menu.dulich" />
+              </DropdownToggle>
+              <DropdownMenu>
+                <NavLink to="/bao-hiem-du-lich-trong-nuoc" className="dropdown-item">
+                  <IntlMessages id="bh.menu.dulich.trong-nuoc" />
+                </NavLink>
+                <NavLink to="/bao-hiem-du-lich-nuoc-ngoai" className="dropdown-item">
+                  <IntlMessages id="bh.menu.dulich.nuoc-ngoai" />
+                </NavLink>
+              </DropdownMenu>
+            </UncontrolledDropdown>
           </NavItem>
           <NavItem className={window.location.pathname === '/lien-he' ? 'active' : ''}>
             <NavLink to="/lien-he">
