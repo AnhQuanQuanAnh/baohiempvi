@@ -19,6 +19,7 @@ import { Colxx } from "Components/CustomBootstrap";
 
 import { connect } from "react-redux";
 import { landingPageMobileMenuToggle, landingPageMobileMenuClose } from "Redux/actions";
+import PVICareForm from "../../components/LandingPage/SectionPviCareForm";
 
 const mapStateToProps = ({ landingPage }) => {
   const { isMobileMenuOpen } = landingPage;
@@ -240,45 +241,7 @@ class PVICarePersonal extends Component {
                   </Row>
 
                   <h3 className="text-left">YÊU CẦU PVI TƯ VẤN NHANH TẠI ĐÂY</h3>
-                  <Row className="mb-4">
-                    <Colxx xxs="12">
-                      <Form>
-                        <FormGroup row>
-                          <Colxx sm={4}>
-                            <FormGroup>
-                              <Label for="nameCustomer">
-                                Họ và tên của bạn
-                              </Label>
-                              <Input
-                                type="text"
-                                name="nameCustomer"
-                                id="nameCustomer"
-                              />
-                            </FormGroup>
-                          </Colxx>
-                          <Colxx sm={8}>
-                          </Colxx>
-
-                          <Colxx sm={4}>
-                            <FormGroup>
-                              <Label for="exampleZipGrid">
-                                Số điện thoại
-                              </Label>
-                              <Input
-                                type="text"
-                                name="phoneNumber"
-                                id="phoneNumber"
-                              />
-                            </FormGroup>
-                          </Colxx>
-                        </FormGroup>
-
-                        <Button color="primary">
-                          YÊU CẦU TƯ VẤN
-                        </Button>
-                      </Form>
-                    </Colxx>
-                  </Row>
+                  <PVICareForm/>
                   <Row>
                     <Colxx xxs="12">
                       <div>

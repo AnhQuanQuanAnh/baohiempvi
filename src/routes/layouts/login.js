@@ -10,10 +10,10 @@ import { loginUser } from "Redux/actions";
 
 class LoginLayout extends Component {
   constructor(props) {
-    super(props);
+    super(props);   
     this.state = {
       email: "demo@gogo.com",
-      password: "gogo123"
+      password: "123"
     };
   }
   onUserLogin() {
@@ -38,13 +38,13 @@ class LoginLayout extends Component {
               <Colxx xxs="12" md="10" className="mx-auto my-auto">
                 <Card className="auth-card">
                   <div className="position-relative image-side ">
-                    <p className="text-white h2">MAGIC IS IN THE DETAILS</p>
+                    <p className="text-white h2">BẢO HIỂM PVI</p>
                     <p className="white mb-0">
-                      Please use your credentials to login.
+                      Vui lòng sử dụng thông tin đăng nhập của bạn để đăng nhập.
                       <br />
-                      If you are not a member, please{" "}
+                      Nếu bạn không phải là thành viên, xin vui lòng{" "}
                       <NavLink to={`/register`} className="white">
-                        register
+                        Đăng kí
                       </NavLink>
                       .
                     </p>
