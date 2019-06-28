@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Container, Row } from "reactstrap";
+import { Container, Row, Form, Alert, Input, Button } from "reactstrap";
 import { MenuMultipage, MenuMultipageMobile } from "Components/LandingPage/SectionMenu";
 import Headroom from 'react-headroom';
 import scrollToComponent from 'react-scroll-to-component';
@@ -31,9 +31,38 @@ const h2Style = {
 class Contact extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      name : '',
+      phone : '',
+      email : '',
+      note : '',
+      alert_message : ''
+    }
     this.onMenuClick = this.onMenuClick.bind(this);
   }
 
+  onChange = (e) => {
+    var target = e.target;
+    var name = target.name;
+    var value = target.type === 'checkbox' ? target.checked : target.value;
+    this.setState({
+      [name] : value
+    });
+}
+    
+onSave = (e) => {
+  e.preventDefault();
+  const url = "http://localhost:8080/api/customers";
+  const data = { name : this.state.name, phone: this.state.phone, email : this.state.email, note : this.state.note }
+  fetch(url, { method: 'POST', // or ‘PUT’
+    body: JSON.stringify(data), // data can be `string` or {object}!
+    headers:{ 'Content-Type': 'application/json' } })
+    .then(res => res.json())
+    .catch(error => 
+      this.setState({alert_message: "error"}))
+    .then(response => 
+      this.setState({alert_message: "success"}));
+}
   onMobileMenuToggle() {
     this.props.landingPageMobileMenuToggle()
   }
@@ -62,6 +91,7 @@ class Contact extends Component {
 
   render() {
     const { messages } = this.props.intl;
+    const { name, phone, email, note, alert_message } = this.state;
     return (
       <Fragment>
         <div className={this.props.isMobileMenuOpen ? "landing-page show-mobile-menu" : "landing-page"}>
@@ -88,40 +118,52 @@ class Contact extends Component {
 
               <div className="section" ref={(x) => { this.content = x; }}>
                 <Container>
+                
                   <Row>
                     <Colxx xxs="12" lg="7">
                       <h2>LIÊN HỆ VỚI CHÚNG TÔI</h2>
                       <div className="card">
                         <div className="card-body">
-
-                          <form>
+                        {alert_message === "success" ? <Alert color="info">Yêu cầu tư vấn thành công </Alert> : null}
+                          {alert_message === "error" ?  <Alert color="danger">Yêu cầu tư vấn thất bại</Alert> : null}
+                          <Form onSubmit= {this.onSave}>
                             <h3>Tên của quý khách</h3>
-                            <input className="form-control" placeholder="" />
+                            <Input
+                              type="text"
+                              name="name"
+                              id="name"
+                              value = {name}
+                              onChange = {this.onChange}
+                            />
                             <h3>Số điện thoại</h3>
-                            <input className="form-control" />
+                            <Input
+                              type="text"
+                              name="phone"
+                              id="phone"
+                              value = {phone}
+                              onChange = {this.onChange}
+                            />
                             <h3>E-mail</h3>
-                            <input className="form-control" />
+                            <Input
+                              type="text"
+                              name="email"
+                              id="email"
+                              value = {email}
+                              onChange = {this.onChange}
+                             />
 
                             <h3>Lời nhắn của quý khách cần hỗ trợ</h3>
-                            <textarea className="form-control" rows="4"></textarea>
-
-                            <a href="#" className="btn btn-primary btn-multiple-state float-right" id="contactButton">
-                              <div className="spinner d-inline-block">
-                                <div className="bounce1"></div>
-                                <div className="bounce2"></div>
-                                <div className="bounce3"></div>
-                              </div>
-                              <span className="icon success" data-toggle="tooltip" data-placement="top"
-                                title="Message sent successfully!">
-                                <i className="simple-icon-check"></i>
-                              </span>
-                              <span className="icon fail" data-toggle="tooltip" data-placement="top"
-                                title="Something went wrong!">
-                                <i className="simple-icon-exclamation"></i>
-                              </span>
-                              <span className="label ">Gửi</span>
-                            </a>
-                          </form>
+                            <Input 
+                              type="textarea"
+                              name="note"
+                              id="note"
+                              value = {note}
+                              onChange = {this.onChange}
+                             />
+                           <Button className="btn btn-primary btn-multiple-state float-right" color="primary" onClick={this.onSave}>
+                             Gửi
+                           </Button>
+                          </Form>
                         </div>
                       </div>
                     </Colxx>

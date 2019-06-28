@@ -41,10 +41,18 @@ const h4Style = {
   fontWeight: 'bold'
 }
 
+
+
+
+
 class TaiNan extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      fileName : '',
+    }
     this.onMenuClick = this.onMenuClick.bind(this);
+    // this.onClickPDF = this.onClickPDF.bind(this);
   }
 
   onMobileMenuToggle() {
@@ -70,6 +78,25 @@ class TaiNan extends Component {
     } else {
       scrollToComponent(this[ref], { align: 'top' });
     }
+  }
+
+
+  onClickPDF(fileName){
+    const url = `http://localhost:8080/api/showFile/${fileName}`;
+    fetch(url, { method: 'GET', // or ‘PUT’
+      headers:{ 'Content-Type': 'application/pdf' } })
+      .then(res => {
+        //Create a Blob from the PDF Stream
+            const file = new Blob(
+              [res.data], 
+              {type: 'application/pdf'});
+        //Build a URL from the file
+            const fileURL = URL.createObjectURL(file);
+        //Open the URL on new Window
+            window.open(fileURL);
+        })
+      .then(response => console.log('Success:', response))
+      .then(error  => console.log('error :', error ));
   }
 
   render() {
@@ -330,13 +357,13 @@ class TaiNan extends Component {
                         <h3>Quy định bắt buộc về bảo hiểm tai nạn đối với tất cả các công trình xây dựng theo thông tư 329/2016/TT-BTCngày 26/12/2016</h3>
                       </div>
                       <div>
-                        <h4 className="text-dark">Xem thông tư 329/2016/TT-BTC <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
+                        <h4 className="text-dark">Xem thông tư 329/2016/TT-BTC <a onClick={ () => this.onClickPDF("TNCN1")}><span className="text-danger font-weight-bold"> tại đây</span></a></h4>
                       </div>
                       <div >
-                        <h4 className="text-dark">Xem quy tắc bảo hiểm tai nạn 24h <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
+                        <h4 className="text-dark">Xem quy tắc bảo hiểm tai nạn 24h <a onClick={this.onClickPDF("TNCN2")} ><span className="text-danger font-weight-bold"> tại đây</span></a></h4>
                       </div>
                       <div >
-                        <h4 className="text-dark">Xem bảng quy định chi trả theo tỷ lệ thương tật của Bộ tài chính <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
+                        <h4 className="text-dark">Xem bảng quy định chi trả theo tỷ lệ thương tật của Bộ tài chính <a onClick={this.onClickPDF("TNCN3")}><span className="text-danger font-weight-bold"> tại đây</span></a></h4>
                       </div>
 
                     </Colxx>
