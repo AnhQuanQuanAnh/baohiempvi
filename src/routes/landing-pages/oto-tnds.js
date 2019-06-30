@@ -68,6 +68,7 @@ class OtoTNDS extends Component {
 
   render() {
     const { messages } = this.props.intl;
+    const api= 'http://localhost:8080/api/downloadFile/'
     return (
       <Fragment>
         <div className={this.props.isMobileMenuOpen ? "landing-page show-mobile-menu" : "landing-page"}>
@@ -385,7 +386,7 @@ class OtoTNDS extends Component {
                           <h4 className="text-dark">Xem thông tin biểu phí bảo hiểm chi tiết <NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
                         </div>
                         <div>
-                          <h4 className="text-dark">Mẫu giấy yêu cầu bảo hiểm<NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
+                        <h4 className="text-dark">Mẫu giấy yêu cầu bảo hiểmMẫu giấy yêu cầu bảo hiểm <a href={`${api}BAOHIEM`} target='_blank' download><span className="text-danger font-weight-bold"> tại đây</span></a></h4>
                         </div>
                         <div>
                           <h4 className="text-dark">Mẫu giấy yêu cầu bồi thường<NavLink to="/lien-he"><span className="text-danger font-weight-bold"> tại đây</span></NavLink></h4>
